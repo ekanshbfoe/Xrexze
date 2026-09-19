@@ -1,0 +1,415 @@
+2026-09-19 21:19:52,203 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211757.png (720x1600)
+2026-09-19 21:19:52,214 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-19 21:19:52,214 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:19:52,214 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:19:52,214 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:19:52,223 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-374 (720x221) -> panel_0001.png
+2026-09-19 21:19:52,234 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 374-720 (720x346) -> panel_0002.png
+2026-09-19 21:19:52,254 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 720-1374 (720x654) -> panel_0003.png
+2026-09-19 21:19:52,261 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1374-1561 (720x187) -> panel_0004.png
+2026-09-19 21:19:52,262 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:19:52,262 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:19:52,316 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-19 21:19:52,325 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-19 21:19:52,325 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:19:52,326 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:19:52,326 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:19:52,328 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 153-262 (720x109) -> panel_0005.png
+2026-09-19 21:19:52,361 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 262-1276 (720x1014) -> panel_0006.png
+2026-09-19 21:19:52,368 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1276-1561 (720x285) -> panel_0007.png
+2026-09-19 21:19:52,369 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:19:52,369 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:19:52,398 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 7 panels extracted
+2026-09-19 21:19:52,399 | INFO     | core.vision_client | __init__:114 | VLMClient initialized: model=nvidia/Llama-3.1-Nemotron-Nano-12B-V2-VL, keys=1, base=https://aihubmix.com/v1
+2026-09-19 21:19:52,413 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=1/3
+2026-09-19 21:19:53,949 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:19:53,950 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=2/3
+2026-09-19 21:19:54,979 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:19:54,984 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=3/3
+2026-09-19 21:19:56,294 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:19:56,319 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=1/3
+2026-09-19 21:19:58,300 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:19:58,301 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=2/3
+2026-09-19 21:20:00,018 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:00,020 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=3/3
+2026-09-19 21:20:01,760 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:01,781 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=1/3
+2026-09-19 21:20:03,825 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:03,826 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=2/3
+2026-09-19 21:20:06,157 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:06,159 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=3/3
+2026-09-19 21:20:09,038 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:09,058 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0004.png, attempt=1/3
+2026-09-19 21:20:10,563 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:10,563 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0004.png, attempt=2/3
+2026-09-19 21:20:11,551 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:11,552 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0004.png, attempt=3/3
+2026-09-19 21:20:13,040 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:13,056 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0005.png, attempt=1/3
+2026-09-19 21:20:13,690 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:13,691 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0005.png, attempt=2/3
+2026-09-19 21:20:14,363 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:14,364 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0005.png, attempt=3/3
+2026-09-19 21:20:14,972 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:14,998 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0006.png, attempt=1/3
+2026-09-19 21:20:18,440 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:18,441 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0006.png, attempt=2/3
+2026-09-19 21:20:21,876 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:21,878 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0006.png, attempt=3/3
+2026-09-19 21:20:25,999 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:26,011 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0007.png, attempt=1/3
+2026-09-19 21:20:27,361 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:27,362 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0007.png, attempt=2/3
+2026-09-19 21:20:28,643 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:20:28,645 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0007.png, attempt=3/3
+2026-09-19 21:20:30,150 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:22:38,963 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211757.png (720x1600)
+2026-09-19 21:22:38,970 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-19 21:22:38,970 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:22:38,970 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:22:38,970 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:22:38,976 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-374 (720x221) -> panel_0001.png
+2026-09-19 21:22:38,987 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 374-720 (720x346) -> panel_0002.png
+2026-09-19 21:22:39,007 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 720-1374 (720x654) -> panel_0003.png
+2026-09-19 21:22:39,014 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1374-1561 (720x187) -> panel_0004.png
+2026-09-19 21:22:39,014 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:22:39,014 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:22:39,062 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-19 21:22:39,069 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-19 21:22:39,070 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:22:39,070 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:22:39,070 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:22:39,072 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 153-262 (720x109) -> panel_0005.png
+2026-09-19 21:22:39,105 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 262-1276 (720x1014) -> panel_0006.png
+2026-09-19 21:22:39,111 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1276-1561 (720x285) -> panel_0007.png
+2026-09-19 21:22:39,111 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:22:39,112 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:22:39,138 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 7 panels extracted
+2026-09-19 21:22:39,138 | INFO     | core.vision_client | __init__:114 | VLMClient initialized: model=nvidia/Llama-3.1-Nemotron-Nano-12B-V2-VL, keys=1, base=https://aihubmix.com/v1
+2026-09-19 21:22:39,148 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=1/3
+2026-09-19 21:22:40,397 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:22:40,402 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=2/3
+2026-09-19 21:22:41,699 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:22:41,700 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=3/3
+2026-09-19 21:22:43,009 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:22:43,030 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=1/3
+2026-09-19 21:22:45,026 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:22:45,027 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=2/3
+2026-09-19 21:22:47,863 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:22:47,865 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=3/3
+2026-09-19 21:22:50,605 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:22:50,623 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=1/3
+2026-09-19 21:22:55,174 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:22:55,175 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=2/3
+2026-09-19 21:22:58,898 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:22:58,900 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=3/3
+2026-09-19 21:23:03,427 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:03,444 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0004.png, attempt=1/3
+2026-09-19 21:23:05,074 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:05,075 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0004.png, attempt=2/3
+2026-09-19 21:23:06,638 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:06,640 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0004.png, attempt=3/3
+2026-09-19 21:23:08,396 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:08,416 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0005.png, attempt=1/3
+2026-09-19 21:23:09,100 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:09,101 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0005.png, attempt=2/3
+2026-09-19 21:23:10,637 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:10,638 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0005.png, attempt=3/3
+2026-09-19 21:23:11,309 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:11,341 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0006.png, attempt=1/3
+2026-09-19 21:23:15,919 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:15,920 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0006.png, attempt=2/3
+2026-09-19 21:23:19,316 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:19,318 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0006.png, attempt=3/3
+2026-09-19 21:23:22,417 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:22,433 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0007.png, attempt=1/3
+2026-09-19 21:23:23,966 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:23,967 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0007.png, attempt=2/3
+2026-09-19 21:23:25,587 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:23:25,588 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0007.png, attempt=3/3
+2026-09-19 21:23:26,984 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:28:55,221 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211757.png (720x1600)
+2026-09-19 21:28:55,231 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-19 21:28:55,231 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:28:55,231 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:28:55,231 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:28:55,237 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-374 (720x221) -> panel_0001.png
+2026-09-19 21:28:55,250 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 374-720 (720x346) -> panel_0002.png
+2026-09-19 21:28:55,269 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 720-1374 (720x654) -> panel_0003.png
+2026-09-19 21:28:55,276 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1374-1561 (720x187) -> panel_0004.png
+2026-09-19 21:28:55,277 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:28:55,277 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:28:55,327 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-19 21:28:55,335 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-19 21:28:55,335 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:28:55,335 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:28:55,335 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:28:55,338 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 153-262 (720x109) -> panel_0005.png
+2026-09-19 21:28:55,369 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 262-1276 (720x1014) -> panel_0006.png
+2026-09-19 21:28:55,375 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1276-1561 (720x285) -> panel_0007.png
+2026-09-19 21:28:55,376 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:28:55,376 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:28:55,404 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 7 panels extracted
+2026-09-19 21:28:55,404 | INFO     | core.vision_client | __init__:114 | VLMClient initialized: model=nemotron-3.5-lightning-free, keys=1, base=https://aihubmix.com/v1
+2026-09-19 21:28:55,418 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=1/3
+2026-09-19 21:28:57,075 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 404 Client Error: Not Found for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:28:57,113 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=2/3
+2026-09-19 21:28:58,559 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 404 Client Error: Not Found for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:28:58,560 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=3/3
+2026-09-19 21:29:00,420 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 404 Client Error: Not Found for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:29:00,442 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=1/3
+2026-09-19 21:29:02,154 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 404 Client Error: Not Found for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:29:02,155 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=2/3
+2026-09-19 21:29:04,335 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 404 Client Error: Not Found for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:29:04,337 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=3/3
+2026-09-19 21:29:06,481 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 404 Client Error: Not Found for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:29:06,503 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=1/3
+2026-09-19 21:29:09,834 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 404 Client Error: Not Found for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:29:09,835 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=2/3
+2026-09-19 21:29:12,304 | ERROR    | core.vision_client | generate_narration:265 | VLM request error: 404 Client Error: Not Found for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:29:12,305 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=3/3
+2026-09-19 21:35:33,623 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211757.png (720x1600)
+2026-09-19 21:35:33,631 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-19 21:35:33,631 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:35:33,631 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:35:33,631 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:35:33,637 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-374 (720x221) -> panel_0001.png
+2026-09-19 21:35:33,648 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 374-720 (720x346) -> panel_0002.png
+2026-09-19 21:35:33,668 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 720-1374 (720x654) -> panel_0003.png
+2026-09-19 21:35:33,675 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1374-1561 (720x187) -> panel_0004.png
+2026-09-19 21:35:33,675 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:35:33,675 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:35:33,724 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-19 21:35:33,732 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-19 21:35:33,732 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:35:33,732 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:35:33,732 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:35:33,734 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 153-262 (720x109) -> panel_0005.png
+2026-09-19 21:35:33,765 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 262-1276 (720x1014) -> panel_0006.png
+2026-09-19 21:35:33,771 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1276-1561 (720x285) -> panel_0007.png
+2026-09-19 21:35:33,772 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:35:33,772 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:35:33,800 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 7 panels extracted
+2026-09-19 21:35:33,800 | INFO     | core.vision_client | __init__:114 | VLMClient initialized: model=nvidia/Llama-3.1-Nemotron-Nano-12B-V2-VL, keys=1, base=https://aihubmix.com/v1
+2026-09-19 21:35:33,811 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=1/3
+2026-09-19 21:35:35,091 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:35:35,095 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=2/3
+2026-09-19 21:35:36,472 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:35:36,474 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=3/3
+2026-09-19 21:35:38,001 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:35:38,021 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=1/3
+2026-09-19 21:35:39,607 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:35:39,610 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=2/3
+2026-09-19 21:35:41,247 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:35:41,251 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=3/3
+2026-09-19 21:35:43,038 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:35:43,063 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=1/3
+2026-09-19 21:35:45,471 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 400 Client Error: Bad Request for url: https://aihubmix.com/v1/chat/completions
+2026-09-19 21:35:45,473 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=2/3
+2026-09-19 21:37:51,002 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211757.png (720x1600)
+2026-09-19 21:37:51,010 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-19 21:37:51,011 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:37:51,011 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:37:51,011 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:37:51,017 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-374 (720x221) -> panel_0001.png
+2026-09-19 21:37:51,029 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 374-720 (720x346) -> panel_0002.png
+2026-09-19 21:37:51,048 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 720-1374 (720x654) -> panel_0003.png
+2026-09-19 21:37:51,055 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1374-1561 (720x187) -> panel_0004.png
+2026-09-19 21:37:51,056 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:37:51,056 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:37:51,106 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-19 21:37:51,114 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-19 21:37:51,115 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:37:51,115 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:37:51,115 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:37:51,117 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 153-262 (720x109) -> panel_0005.png
+2026-09-19 21:37:51,150 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 262-1276 (720x1014) -> panel_0006.png
+2026-09-19 21:37:51,157 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1276-1561 (720x285) -> panel_0007.png
+2026-09-19 21:37:51,158 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:37:51,158 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:37:51,187 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 7 panels extracted
+2026-09-19 21:37:51,187 | INFO     | core.vision_client | __init__:114 | VLMClient initialized: model=nemotron-nano-12b-v2-vl-free, keys=1, base=https://api.aihubmix.com/v1
+2026-09-19 21:37:51,200 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=1/3
+2026-09-19 21:37:53,035 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 400 Client Error: Bad Request for url: https://api.aihubmix.com/v1/chat/completions
+2026-09-19 21:37:53,036 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=2/3
+2026-09-19 21:37:54,981 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 400 Client Error: Bad Request for url: https://api.aihubmix.com/v1/chat/completions
+2026-09-19 21:37:54,983 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=3/3
+2026-09-19 21:37:56,875 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 400 Client Error: Bad Request for url: https://api.aihubmix.com/v1/chat/completions
+2026-09-19 21:37:56,899 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=1/3
+2026-09-19 21:37:59,964 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 400 Client Error: Bad Request for url: https://api.aihubmix.com/v1/chat/completions
+2026-09-19 21:37:59,965 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=2/3
+2026-09-19 21:39:14,800 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211757.png (720x1600)
+2026-09-19 21:39:14,807 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-19 21:39:14,808 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:39:14,808 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:39:14,808 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:39:14,814 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-374 (720x221) -> panel_0001.png
+2026-09-19 21:39:14,826 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 374-720 (720x346) -> panel_0002.png
+2026-09-19 21:39:14,846 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 720-1374 (720x654) -> panel_0003.png
+2026-09-19 21:39:14,854 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1374-1561 (720x187) -> panel_0004.png
+2026-09-19 21:39:14,854 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:39:14,855 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:39:14,903 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-19 21:39:14,911 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-19 21:39:14,911 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:39:14,911 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:39:14,911 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:39:14,913 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 153-262 (720x109) -> panel_0005.png
+2026-09-19 21:39:14,944 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 262-1276 (720x1014) -> panel_0006.png
+2026-09-19 21:39:14,951 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1276-1561 (720x285) -> panel_0007.png
+2026-09-19 21:39:14,951 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:39:14,952 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:39:14,981 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 7 panels extracted
+2026-09-19 21:39:14,982 | INFO     | core.vision_client | __init__:114 | VLMClient initialized: model=qwen3-vl-flash, keys=1, base=https://api.aihubmix.com/v1
+2026-09-19 21:39:14,994 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=1/3
+2026-09-19 21:39:16,155 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 403 Client Error: Forbidden for url: https://api.aihubmix.com/v1/chat/completions
+2026-09-19 21:39:16,156 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=2/3
+2026-09-19 21:39:18,002 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 403 Client Error: Forbidden for url: https://api.aihubmix.com/v1/chat/completions
+2026-09-19 21:39:18,004 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=3/3
+2026-09-19 21:39:19,073 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 403 Client Error: Forbidden for url: https://api.aihubmix.com/v1/chat/completions
+2026-09-19 21:39:19,097 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=1/3
+2026-09-19 21:39:20,846 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 403 Client Error: Forbidden for url: https://api.aihubmix.com/v1/chat/completions
+2026-09-19 21:39:20,847 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=2/3
+2026-09-19 21:39:22,697 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 403 Client Error: Forbidden for url: https://api.aihubmix.com/v1/chat/completions
+2026-09-19 21:39:22,698 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=3/3
+2026-09-19 21:39:24,554 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 403 Client Error: Forbidden for url: https://api.aihubmix.com/v1/chat/completions
+2026-09-19 21:39:24,577 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=1/3
+2026-09-19 21:40:45,501 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211757.png (720x1600)
+2026-09-19 21:40:45,510 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-19 21:40:45,510 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:40:45,510 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:40:45,510 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:40:45,516 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-374 (720x221) -> panel_0001.png
+2026-09-19 21:40:45,527 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 374-720 (720x346) -> panel_0002.png
+2026-09-19 21:40:45,549 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 720-1374 (720x654) -> panel_0003.png
+2026-09-19 21:40:45,556 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1374-1561 (720x187) -> panel_0004.png
+2026-09-19 21:40:45,556 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:40:45,556 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:40:45,609 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-19 21:40:45,617 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-19 21:40:45,617 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:40:45,617 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:40:45,618 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:40:45,619 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 153-262 (720x109) -> panel_0005.png
+2026-09-19 21:40:45,651 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 262-1276 (720x1014) -> panel_0006.png
+2026-09-19 21:40:45,658 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1276-1561 (720x285) -> panel_0007.png
+2026-09-19 21:40:45,658 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:40:45,658 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:40:45,692 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 7 panels extracted
+2026-09-19 21:40:45,692 | INFO     | core.vision_client | __init__:114 | VLMClient initialized: model=qwen/qwen2.5-vl-72b-instruct:free, keys=1, base=https://openrouter.ai/api/v1
+2026-09-19 21:40:45,704 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=1/3
+2026-09-19 21:40:46,778 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+2026-09-19 21:40:46,779 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=2/3
+2026-09-19 21:40:47,903 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+2026-09-19 21:40:47,911 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0001.png, attempt=3/3
+2026-09-19 21:40:49,041 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+2026-09-19 21:40:49,065 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=1/3
+2026-09-19 21:40:50,595 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+2026-09-19 21:40:50,597 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=2/3
+2026-09-19 21:40:52,238 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+2026-09-19 21:40:52,240 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0002.png, attempt=3/3
+2026-09-19 21:40:53,551 | ERROR    | core.vision_client | generate_narration:269 | VLM request error: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+2026-09-19 21:40:53,578 | INFO     | core.vision_client | generate_narration:211 | VLM request: panel=panel_0003.png, attempt=1/3
+2026-09-19 21:47:36,119 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211757.png (720x1600)
+2026-09-19 21:47:36,127 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-19 21:47:36,127 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:47:36,127 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:47:36,127 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:47:36,134 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-374 (720x221) -> panel_0001.png
+2026-09-19 21:47:36,145 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 374-720 (720x346) -> panel_0002.png
+2026-09-19 21:47:36,163 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 720-1374 (720x654) -> panel_0003.png
+2026-09-19 21:47:36,169 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1374-1561 (720x187) -> panel_0004.png
+2026-09-19 21:47:36,170 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:47:36,170 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:47:36,217 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-19 21:47:36,225 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-19 21:47:36,225 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:47:36,225 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:47:36,225 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:47:36,227 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 153-262 (720x109) -> panel_0005.png
+2026-09-19 21:47:36,256 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 262-1276 (720x1014) -> panel_0006.png
+2026-09-19 21:47:36,262 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1276-1561 (720x285) -> panel_0007.png
+2026-09-19 21:47:36,263 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:47:36,263 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:47:36,292 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 7 panels extracted
+2026-09-19 21:47:36,293 | INFO     | core.vision_client | __init__:114 | VLMClient initialized: model=llama-3.2-11b-vision-preview, keys=1, base=https://api.groq.com/openai/v1
+2026-09-19 21:47:36,303 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0001.png, attempt=1/3
+2026-09-19 21:47:37,176 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:47:37,177 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0001.png, attempt=2/3
+2026-09-19 21:47:37,948 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:47:37,949 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0001.png, attempt=3/3
+2026-09-19 21:47:38,708 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:47:38,732 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0002.png, attempt=1/3
+2026-09-19 21:47:40,062 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:47:40,063 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0002.png, attempt=2/3
+2026-09-19 21:47:41,718 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:47:41,721 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0002.png, attempt=3/3
+2026-09-19 21:47:43,478 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:47:43,503 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0003.png, attempt=1/3
+2026-09-19 21:47:45,793 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:47:45,794 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0003.png, attempt=2/3
+2026-09-19 21:48:10,406 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211757.png (720x1600)
+2026-09-19 21:48:10,414 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-19 21:48:10,415 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:48:10,415 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:48:10,415 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:48:10,420 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-374 (720x221) -> panel_0001.png
+2026-09-19 21:48:10,432 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 374-720 (720x346) -> panel_0002.png
+2026-09-19 21:48:10,451 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 720-1374 (720x654) -> panel_0003.png
+2026-09-19 21:48:10,458 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1374-1561 (720x187) -> panel_0004.png
+2026-09-19 21:48:10,458 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:48:10,458 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:48:10,505 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-19 21:48:10,514 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-19 21:48:10,514 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-19 21:48:10,514 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-19 21:48:10,514 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-19 21:48:10,516 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 153-262 (720x109) -> panel_0005.png
+2026-09-19 21:48:10,545 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 262-1276 (720x1014) -> panel_0006.png
+2026-09-19 21:48:10,551 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1276-1561 (720x285) -> panel_0007.png
+2026-09-19 21:48:10,552 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-19 21:48:10,552 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-19 21:48:10,578 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 7 panels extracted
+2026-09-19 21:48:10,579 | INFO     | core.vision_client | __init__:114 | VLMClient initialized: model=llama-3.2-11b-vision-preview, keys=1, base=https://api.groq.com/openai/v1
+2026-09-19 21:48:10,588 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0001.png, attempt=1/3
+2026-09-19 21:48:11,558 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:11,559 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0001.png, attempt=2/3
+2026-09-19 21:48:12,398 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:12,399 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0001.png, attempt=3/3
+2026-09-19 21:48:13,451 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:13,469 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0002.png, attempt=1/3
+2026-09-19 21:48:15,160 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:15,160 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0002.png, attempt=2/3
+2026-09-19 21:48:16,660 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:16,662 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0002.png, attempt=3/3
+2026-09-19 21:48:17,662 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:17,685 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0003.png, attempt=1/3
+2026-09-19 21:48:19,084 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:19,084 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0003.png, attempt=2/3
+2026-09-19 21:48:20,652 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:20,654 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0003.png, attempt=3/3
+2026-09-19 21:48:22,261 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:22,280 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0004.png, attempt=1/3
+2026-09-19 21:48:23,041 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:23,042 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0004.png, attempt=2/3
+2026-09-19 21:48:23,938 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:23,940 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0004.png, attempt=3/3
+2026-09-19 21:48:24,937 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:24,953 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0005.png, attempt=1/3
+2026-09-19 21:48:25,302 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:25,311 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0005.png, attempt=2/3
+2026-09-19 21:48:25,616 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:25,619 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0005.png, attempt=3/3
+2026-09-19 21:48:25,968 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:25,994 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0006.png, attempt=1/3
+2026-09-19 21:48:28,897 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:28,899 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0006.png, attempt=2/3
+2026-09-19 21:48:31,492 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:31,494 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0006.png, attempt=3/3
+2026-09-19 21:48:34,129 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:34,149 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0007.png, attempt=1/3
+2026-09-19 21:48:34,876 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:34,877 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0007.png, attempt=2/3
+2026-09-19 21:48:35,597 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-19 21:48:35,599 | INFO     | core.vision_client | generate_narration:212 | VLM request: panel=panel_0007.png, attempt=3/3
+2026-09-19 21:48:36,289 | ERROR    | core.vision_client | generate_narration:270 | VLM request error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
