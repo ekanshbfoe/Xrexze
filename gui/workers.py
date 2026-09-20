@@ -87,8 +87,7 @@ class PipelineWorker(QThread):
     def run(self):
         """Execute the full pipeline: Slice -> Script -> Audio -> Render -> Stitch."""
         from core.slicer import slice_chapter
-        from core.vision_client import VLMClient
-        from core.voice_client import VoiceClient
+        from core.colab_client import ColabClient
         from core.compositor import render_video_chunk
         from core.stitcher import stitch_final_video
         from config.settings import get_settings
@@ -122,9 +121,28 @@ class PipelineWorker(QThread):
             return
 
         total = len(panels)
-        vlm = VLMClient()
-        voice = VoiceClient()
+
+        # Initialize unified Colab client
+        colab_url = settings.colab_base_url
+        if not colab_url:
+            self.error_occurred.emit(
+                0, "No Colab URL configured. Set COLAB_BASE_URL in .env "
+                "or paste it in the GUI."
+            )
+            return
+
+        colab = ColabClient(base_url=colab_url)
+
+        # Health check
+        health = colab.health_check()
+        if health.get("status") != "ready":
+            self.error_occurred.emit(
+                0, f"Colab backend not ready: {health}"
+            )
+            return
+
         chunk_paths: list[Path] = []
+        prev_context = ""
 
         for idx, panel_info in enumerate(panels):
             if not self._running:
@@ -143,10 +161,13 @@ class PipelineWorker(QThread):
 
             self.progress_updated.emit(idx + 1, total)
 
-            # Phase 2: Script
+            # Phase 2: Script (via Colab VLM)
             self.panel_state_changed.emit(pid, "Scripting")
             try:
-                narration = vlm.generate_narration(panel_path)
+                narration = colab.generate_script(
+                    image_path=panel_path,
+                    context=prev_context,
+                )
             except RuntimeError as e:
                 self.error_occurred.emit(pid, str(e))
                 self.panel_state_changed.emit(pid, "Failed")
@@ -155,7 +176,9 @@ class PipelineWorker(QThread):
             # Validate narration quality
             if not narration or len(narration.strip()) < 10:
                 try:
-                    narration = vlm.generate_narration(panel_path)
+                    narration = colab.generate_script(
+                        image_path=panel_path, context=prev_context
+                    )
                 except RuntimeError:
                     pass
                 if not narration or len(narration.strip()) < 10:
@@ -163,6 +186,8 @@ class PipelineWorker(QThread):
                         f"[Panel {pid}: narration generation failed"
                         " - manual edit required]"
                     )
+
+            prev_context = narration[:100]
 
             # Manual QA mode: pause for user approval
             if self._mode == "manual_qa":
@@ -176,14 +201,13 @@ class PipelineWorker(QThread):
                     narration = self._edited_script
                     self._edited_script = None
 
-            # Phase 3: Audio
+            # Phase 3: Audio (via Colab TTS)
             self.panel_state_changed.emit(pid, "Audio Synthesis")
-            audio_path = audio_dir / f"audio_{pid:04d}.wav"
+            audio_path = audio_dir / f"audio_{pid:04d}.mp3"
             try:
-                audio_result = voice.synthesize(
+                colab.generate_voice(
                     text=narration,
                     output_path=audio_path,
-                    panel_id=pid,
                 )
             except RuntimeError as e:
                 self.error_occurred.emit(pid, str(e))
@@ -191,9 +215,7 @@ class PipelineWorker(QThread):
                 continue
 
             if self._mode == "manual_qa":
-                self.audio_ready.emit(
-                    pid, str(audio_path), audio_result["duration_sec"]
-                )
+                self.audio_ready.emit(pid, str(audio_path), 0.0)
                 self._qa_approved = False
                 while not self._qa_approved and self._running:
                     self.msleep(200)
@@ -237,5 +259,5 @@ class PipelineWorker(QThread):
             except RuntimeError as e:
                 self.error_occurred.emit(0, f"Stitching failed: {e}")
 
-        voice.close()
         gc.collect()
+

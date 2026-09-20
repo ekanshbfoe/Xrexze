@@ -1,4 +1,4 @@
-"""Left panel: drag-drop zone, API settings, and pipeline controls."""
+"""Left panel: folder browser, Colab URL, and pipeline controls."""
 
 from __future__ import annotations
 from pathlib import Path
@@ -20,6 +20,7 @@ class IngestionPanel(QWidget):
         layout = QVBoxLayout(self)
         layout.setAlignment(Qt.AlignmentFlag.AlignTop)
 
+        # ── Folder Browser ───────────────────
         self.drop_label = QLabel(
             "Drop manhwa pages folder here\nor click Browse"
         )
@@ -34,24 +35,28 @@ class IngestionPanel(QWidget):
         self.browse_btn.clicked.connect(self._browse_folder)
         layout.addWidget(self.browse_btn)
 
-        api_group = QGroupBox("API Settings")
-        api_layout = QVBoxLayout()
-        api_layout.addWidget(QLabel("VLM Base URL:"))
-        self.vlm_url_input = QLineEdit()
-        self.vlm_url_input.setPlaceholderText("https://aihubmix.com/v1")
-        api_layout.addWidget(self.vlm_url_input)
-        api_layout.addWidget(QLabel("VLM API Key(s):"))
-        self.vlm_key_input = QLineEdit()
-        self.vlm_key_input.setEchoMode(QLineEdit.EchoMode.Password)
-        self.vlm_key_input.setPlaceholderText("sk-key1,sk-key2")
-        api_layout.addWidget(self.vlm_key_input)
-        api_layout.addWidget(QLabel("HF Space ID:"))
-        self.hf_space_input = QLineEdit()
-        self.hf_space_input.setPlaceholderText("username/omnivoice")
-        api_layout.addWidget(self.hf_space_input)
-        api_group.setLayout(api_layout)
-        layout.addWidget(api_group)
+        # ── Colab Backend URL ────────────────
+        colab_group = QGroupBox("Colab Backend")
+        colab_layout = QVBoxLayout()
+        colab_layout.addWidget(QLabel("Colab Tunnel URL:"))
+        self.colab_url_input = QLineEdit()
+        self.colab_url_input.setPlaceholderText(
+            "https://abc-123.trycloudflare.com"
+        )
+        colab_layout.addWidget(self.colab_url_input)
 
+        self.health_btn = QPushButton("Test Connection")
+        self.health_btn.clicked.connect(self._test_connection)
+        colab_layout.addWidget(self.health_btn)
+
+        self.health_status = QLabel("Not connected")
+        self.health_status.setStyleSheet("color: #888; font-size: 11px;")
+        colab_layout.addWidget(self.health_status)
+
+        colab_group.setLayout(colab_layout)
+        layout.addWidget(colab_group)
+
+        # ── Pipeline Mode ────────────────────
         mode_group = QGroupBox("Pipeline Mode")
         mode_layout = QVBoxLayout()
         self.mode_group = QButtonGroup()
@@ -65,7 +70,8 @@ class IngestionPanel(QWidget):
         mode_group.setLayout(mode_layout)
         layout.addWidget(mode_group)
 
-        self.start_btn = QPushButton("START PIPELINE")
+        # ── Start Button ─────────────────────
+        self.start_btn = QPushButton("▶ START PIPELINE")
         self.start_btn.setStyleSheet(
             "background-color: #16a085; color: white; "
             "font-size: 16px; font-weight: bold; padding: 12px; "
@@ -89,11 +95,59 @@ class IngestionPanel(QWidget):
                 f"{folder_path.name}\n{len(self._page_paths)} pages loaded"
             )
 
+    def _test_connection(self):
+        """Test the Colab backend connection."""
+        url = self.colab_url_input.text().strip()
+        if not url:
+            self.health_status.setText("Enter a Colab URL first")
+            self.health_status.setStyleSheet("color: #e74c3c; font-size: 11px;")
+            return
+
+        self.health_status.setText("Testing...")
+        self.health_status.setStyleSheet("color: #f39c12; font-size: 11px;")
+
+        try:
+            import requests
+            resp = requests.get(f"{url.rstrip('/')}/health", timeout=10)
+            if resp.status_code == 200:
+                data = resp.json()
+                self.health_status.setText(
+                    f"✓ Connected — GPU: {data.get('gpu', '?')}, "
+                    f"VRAM free: {data.get('vram_free_gb', '?')} GB"
+                )
+                self.health_status.setStyleSheet(
+                    "color: #27ae60; font-size: 11px;"
+                )
+
+                # Save URL to settings
+                from config.settings import get_settings
+                settings = get_settings()
+                settings.colab_base_url = url.rstrip("/")
+            else:
+                self.health_status.setText(
+                    f"✗ Error: HTTP {resp.status_code}"
+                )
+                self.health_status.setStyleSheet(
+                    "color: #e74c3c; font-size: 11px;"
+                )
+        except Exception as e:
+            self.health_status.setText(f"✗ {str(e)[:60]}")
+            self.health_status.setStyleSheet(
+                "color: #e74c3c; font-size: 11px;"
+            )
+
     def _start_clicked(self):
         if not self._page_paths:
             self.drop_label.setText(
                 "No pages loaded! Browse a folder first."
             )
             return
+
+        # Save Colab URL from GUI input
+        url = self.colab_url_input.text().strip()
+        if url:
+            from config.settings import get_settings
+            get_settings().colab_base_url = url.rstrip("/")
+
         mode = "auto" if self.auto_radio.isChecked() else "manual_qa"
         self.start_requested.emit(self._page_paths, mode)

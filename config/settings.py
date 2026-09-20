@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
-from typing import List, Literal
+from typing import List, Literal, Optional
 
 from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings
@@ -18,21 +18,26 @@ from pydantic_settings import BaseSettings
 class AppSettings(BaseSettings):
     """Application-wide settings loaded from environment / .env file."""
 
-    # ── VLM API ──────────────────────────────
+    # ── Colab Backend (Primary) ──────────────
+    colab_base_url: str = Field(
+        default="", description="Public URL of the Colab FastAPI backend"
+    )
+
+    # ── Legacy VLM API (kept for backward compat) ─
     vlm_api_base_url: str = Field(
-        ..., description="Base URL for OpenAI-compatible VLM endpoint"
+        default="", description="Base URL for OpenAI-compatible VLM endpoint"
     )
     vlm_api_keys: str = Field(
-        ..., description="Comma-separated API keys for rotation"
+        default="", description="Comma-separated API keys for rotation"
     )
     vlm_model_name: str = Field(
-        default="llama-3.2-11b-vision-preview"
+        default="Qwen/Qwen2.5-VL-7B-Instruct"
     )
     vlm_timeout_sec: int = Field(default=120)
 
-    # ── OmniVoice ────────────────────────────
+    # ── Legacy OmniVoice (kept for backward compat) ─
     hf_omnivoice_space_id: str = Field(
-        ..., description="Gradio Space ID: username/space-name"
+        default="", description="Gradio Space ID: username/space-name"
     )
     hf_token: str = Field(default="", description="HF token (optional)")
     voice_timeout_sec: int = Field(default=300)
@@ -63,6 +68,8 @@ class AppSettings(BaseSettings):
     @property
     def api_keys_list(self) -> List[str]:
         """Split comma-separated keys into a rotation list."""
+        if not self.vlm_api_keys:
+            return []
         return [k.strip() for k in self.vlm_api_keys.split(",") if k.strip()]
 
     @field_validator("output_dir", "temp_dir", mode="after")

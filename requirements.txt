@@ -9,17 +9,6 @@ opencv-python-headless==4.10.0.84
 # Image Processing
 Pillow==10.4.0
 
-# Video Compositing
-moviepy==1.0.3
-ffmpeg-python==0.2.0
-
-# VLM API Client
-requests==2.32.3
-openai==1.40.0
-
-# Gradio Client (for Hugging Face Spaces)
-gradio_client==1.3.0
-
 # System Telemetry
 psutil==6.0.0
 
@@ -28,6 +17,11 @@ python-dotenv==1.0.1
 pydantic==2.8.2
 pydantic-settings==2.4.0
 
+# HTTP Client (for Colab backend)
+requests==2.32.3
+
+# Audio Playback (Windows-safe replacement for QMediaPlayer)
+pygame==2.6.0
+
 # Utilities
 numpy==1.26.4
-pygame==2.6.0
