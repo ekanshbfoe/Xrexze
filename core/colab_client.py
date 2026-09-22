@@ -8,6 +8,8 @@ a Cloudflare tunnel URL.
 Methods:
   - generate_script(image_path, context) -> str
   - generate_voice(text, output_path) -> Path
+  - embed(text) -> list[float]
+  - summarize(text) -> str
 """
 
 from __future__ import annotations
@@ -163,7 +165,6 @@ class ColabClient:
         self,
         text: str,
         output_path: Path,
-        voice_id: str = "hi-IN-SwaraNeural",
         language: str = "hi",
     ) -> Path:
         """
@@ -175,8 +176,6 @@ class ColabClient:
             The Hindi narration text to synthesize.
         output_path : Path
             Where to save the resulting audio file.
-        voice_id : str
-            Voice identifier for edge-tts.
         language : str
             Language code.
 
@@ -190,7 +189,6 @@ class ColabClient:
         payload = {
             "text": text,
             "language": language,
-            "voice_id": voice_id,
         }
 
         last_error: Optional[Exception] = None
@@ -254,3 +252,27 @@ class ColabClient:
             f"Voice synthesis failed after {self._max_retries} attempts: "
             f"{last_error}"
         )
+
+    def embed(self, text: str) -> list[float]:
+        """
+        Get a 1024-dim embedding vector from the Colab BGE-M3 model.
+        """
+        resp = requests.post(
+            f"{self._base_url}/api/embed",
+            json={"text": text},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        return resp.json()["embedding"]
+
+    def summarize(self, text: str) -> str:
+        """
+        Compress multi-chapter text into a single paragraph.
+        """
+        resp = requests.post(
+            f"{self._base_url}/api/summarize",
+            json={"text": text},
+            timeout=180,
+        )
+        resp.raise_for_status()
+        return resp.json()["summary"]

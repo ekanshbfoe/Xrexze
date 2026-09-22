@@ -13,7 +13,8 @@ import pygame
 
 
 class QADeck(QWidget):
-    panel_approved = pyqtSignal(str)
+    script_approved = pyqtSignal(str)
+    render_approved = pyqtSignal()
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -41,6 +42,16 @@ class QADeck(QWidget):
         self.script_editor.setMaximumHeight(150)
         layout.addWidget(self.script_editor)
 
+        # Script Action
+        self.accept_script_btn = QPushButton("Accept Script → Generate Audio")
+        self.accept_script_btn.setStyleSheet(
+            "background-color: #f39c12; color: white; font-weight: bold;"
+        )
+        self.accept_script_btn.clicked.connect(self._accept_script_clicked)
+        self.accept_script_btn.setEnabled(False)
+        layout.addWidget(self.accept_script_btn)
+
+        # Audio Actions
         audio_layout = QHBoxLayout()
         self.play_btn = QPushButton("Play Audio")
         self.stop_btn = QPushButton("Stop")
@@ -54,15 +65,16 @@ class QADeck(QWidget):
         self.audio_status.setStyleSheet("color: #888; font-size: 11px;")
         layout.addWidget(self.audio_status)
 
-        self.approve_btn = QPushButton("Approve & Render")
-        self.approve_btn.setStyleSheet(
+        # Render Action
+        self.approve_render_btn = QPushButton("Approve & Render")
+        self.approve_render_btn.setStyleSheet(
             "background-color: #2980b9; color: white; "
             "font-size: 14px; font-weight: bold; padding: 10px; "
             "border-radius: 6px;"
         )
-        self.approve_btn.clicked.connect(self._approve_clicked)
-        self.approve_btn.setEnabled(False)
-        layout.addWidget(self.approve_btn)
+        self.approve_render_btn.clicked.connect(self._approve_render_clicked)
+        self.approve_render_btn.setEnabled(False)
+        layout.addWidget(self.approve_render_btn)
         layout.addStretch()
 
         pygame.mixer.init()
@@ -81,7 +93,8 @@ class QADeck(QWidget):
             )
             self.preview_label.setPixmap(scaled)
         self.script_editor.setPlainText(narration)
-        self.approve_btn.setEnabled(False)
+        self.accept_script_btn.setEnabled(True)
+        self.approve_render_btn.setEnabled(False)
 
     def show_audio_for_review(
         self, panel_id: int, audio_path: str, duration: float
@@ -90,7 +103,7 @@ class QADeck(QWidget):
         self.audio_status.setText(
             f"Audio: {Path(audio_path).name} ({duration:.1f}s)"
         )
-        self.approve_btn.setEnabled(True)
+        self.approve_render_btn.setEnabled(True)
 
     def _play_audio(self):
         if self._current_audio_path:
@@ -103,7 +116,11 @@ class QADeck(QWidget):
     def _stop_audio(self):
         pygame.mixer.stop()
 
-    def _approve_clicked(self):
+    def _accept_script_clicked(self):
         edited_text = self.script_editor.toPlainText().strip()
-        self.panel_approved.emit(edited_text if edited_text else "")
-        self.approve_btn.setEnabled(False)
+        self.script_approved.emit(edited_text if edited_text else "")
+        self.accept_script_btn.setEnabled(False)
+
+    def _approve_render_clicked(self):
+        self.render_approved.emit()
+        self.approve_render_btn.setEnabled(False)

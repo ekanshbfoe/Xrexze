@@ -6,6 +6,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+colab_profile/
+tools/
+projects/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -22,6 +25,8 @@ dist/
 downloads/
 eggs/
 .eggs/
+temp/
+output/
 lib/
 lib64/
 parts/

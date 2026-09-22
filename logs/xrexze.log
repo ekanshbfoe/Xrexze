@@ -515,3 +515,527 @@
 2026-09-20 19:00:11,371 | INFO     | core.stitcher | create_concat_file:30 | Concat file written: temp\concat.txt (7 chunks)
 2026-09-20 19:00:11,372 | INFO     | core.stitcher | stitch_final_video:64 | Stitching 7 chunks -> final_output.mp4
 2026-09-20 19:00:11,689 | INFO     | core.stitcher | stitch_final_video:80 | Final video stitched: final_output.mp4, size=4.1 MB
+2026-09-22 08:32:16,663 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211757.png (720x1600)
+2026-09-22 08:32:16,683 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-22 08:32:16,684 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-22 08:32:16,684 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-22 08:32:16,684 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-22 08:32:16,693 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-374 (720x221) -> panel_0001.png
+2026-09-22 08:32:16,707 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 374-720 (720x346) -> panel_0002.png
+2026-09-22 08:32:16,732 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 720-1374 (720x654) -> panel_0003.png
+2026-09-22 08:32:16,741 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1374-1561 (720x187) -> panel_0004.png
+2026-09-22 08:32:16,742 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-22 08:32:16,742 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-22 08:32:16,805 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-22 08:32:16,814 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-22 08:32:16,814 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-22 08:32:16,814 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-22 08:32:16,814 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-22 08:32:16,817 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 153-262 (720x109) -> panel_0005.png
+2026-09-22 08:32:16,850 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 262-1276 (720x1014) -> panel_0006.png
+2026-09-22 08:32:16,858 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1276-1561 (720x285) -> panel_0007.png
+2026-09-22 08:32:16,858 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-22 08:32:16,859 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-22 08:32:16,893 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 7 panels extracted
+2026-09-22 08:32:16,899 | INFO     | core.colab_client | __init__:42 | ColabClient initialized: base=https://tcp-addresses-madrid-circuit.trycloudflare.com, timeout=120s, retries=3
+2026-09-22 08:32:17,837 | INFO     | core.colab_client | health_check:55 | Colab health: status=ready, gpu=Tesla T4, vram_free=7.0GB
+2026-09-22 08:32:17,852 | INFO     | core.stitcher | create_concat_file:30 | Concat file written: temp\concat.txt (7 chunks)
+2026-09-22 08:32:17,853 | INFO     | core.stitcher | stitch_final_video:64 | Stitching 7 chunks -> final_output.mp4
+2026-09-22 08:32:19,359 | INFO     | core.stitcher | stitch_final_video:80 | Final video stitched: final_output.mp4, size=4.1 MB
+2026-09-22 08:43:27,732 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211757.png (720x1600)
+2026-09-22 08:43:27,741 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-22 08:43:27,741 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-22 08:43:27,741 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-22 08:43:27,742 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-22 08:43:27,748 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-374 (720x221) -> panel_0001.png
+2026-09-22 08:43:27,759 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 374-720 (720x346) -> panel_0002.png
+2026-09-22 08:43:27,781 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 720-1374 (720x654) -> panel_0003.png
+2026-09-22 08:43:27,788 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1374-1561 (720x187) -> panel_0004.png
+2026-09-22 08:43:27,788 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-22 08:43:27,789 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-22 08:43:27,838 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-22 08:43:27,846 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-22 08:43:27,847 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-22 08:43:27,847 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-22 08:43:27,847 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-22 08:43:27,849 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 153-262 (720x109) -> panel_0005.png
+2026-09-22 08:43:27,879 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 262-1276 (720x1014) -> panel_0006.png
+2026-09-22 08:43:27,887 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1276-1561 (720x285) -> panel_0007.png
+2026-09-22 08:43:27,887 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-22 08:43:27,887 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-22 08:43:27,912 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 7 panels extracted
+2026-09-22 08:43:27,912 | INFO     | core.colab_client | __init__:42 | ColabClient initialized: base=https://titten-naturals-brokers-shoppers.trycloudflare.com, timeout=120s, retries=3
+2026-09-22 08:43:29,525 | INFO     | core.colab_client | health_check:55 | Colab health: status=ready, gpu=Tesla T4, vram_free=7.0GB
+2026-09-22 08:43:29,532 | INFO     | core.colab_client | generate_script:103 | Script request: panel=panel_0001.png, attempt=1/3
+2026-09-22 08:43:46,509 | INFO     | core.colab_client | generate_script:132 | Script success: 172 chars, panel=panel_0001.png
+2026-09-22 08:44:01,971 | INFO     | core.colab_client | generate_voice:200 | Voice request: chars=172, attempt=1/3
+2026-09-22 08:44:10,826 | INFO     | core.colab_client | generate_voice:230 | Voice success: size=540KB, file=audio_0001.mp3
+2026-09-22 08:44:24,534 | INFO     | core.compositor | render_video_chunk:98 | Building composite frame for panel_0001.png
+2026-09-22 08:44:24,843 | INFO     | core.compositor | render_video_chunk:124 | FFmpeg render: chunk_0001.mp4
+2026-09-22 08:44:39,441 | INFO     | core.compositor | render_video_chunk:145 | Chunk rendered: chunk_0001.mp4, duration=64.0s, size=0.5MB
+2026-09-22 08:44:39,497 | INFO     | core.colab_client | generate_script:103 | Script request: panel=panel_0002.png, attempt=1/3
+2026-09-22 08:44:49,537 | INFO     | core.colab_client | generate_script:132 | Script success: 108 chars, panel=panel_0002.png
+2026-09-22 08:45:03,807 | INFO     | core.colab_client | generate_voice:200 | Voice request: chars=108, attempt=1/3
+2026-09-22 08:45:09,949 | INFO     | core.colab_client | generate_voice:230 | Voice success: size=341KB, file=audio_0002.mp3
+2026-09-22 08:45:19,039 | INFO     | core.compositor | render_video_chunk:98 | Building composite frame for panel_0002.png
+2026-09-22 08:45:19,266 | INFO     | core.compositor | render_video_chunk:124 | FFmpeg render: chunk_0002.mp4
+2026-09-22 08:45:20,979 | INFO     | core.compositor | render_video_chunk:145 | Chunk rendered: chunk_0002.mp4, duration=7.3s, size=0.3MB
+2026-09-22 08:45:21,032 | INFO     | core.colab_client | generate_script:103 | Script request: panel=panel_0003.png, attempt=1/3
+2026-09-22 08:45:35,935 | INFO     | core.colab_client | generate_script:132 | Script success: 142 chars, panel=panel_0003.png
+2026-09-22 08:45:54,925 | INFO     | core.colab_client | generate_voice:200 | Voice request: chars=142, attempt=1/3
+2026-09-22 08:46:02,086 | INFO     | core.colab_client | generate_voice:230 | Voice success: size=423KB, file=audio_0003.mp3
+2026-09-22 08:46:17,045 | INFO     | core.compositor | render_video_chunk:98 | Building composite frame for panel_0003.png
+2026-09-22 08:46:17,277 | INFO     | core.compositor | render_video_chunk:124 | FFmpeg render: chunk_0003.mp4
+2026-09-22 08:46:19,506 | INFO     | core.compositor | render_video_chunk:145 | Chunk rendered: chunk_0003.mp4, duration=9.0s, size=0.4MB
+2026-09-22 08:46:19,569 | INFO     | core.colab_client | generate_script:103 | Script request: panel=panel_0004.png, attempt=1/3
+2026-09-22 08:46:30,152 | INFO     | core.colab_client | generate_script:132 | Script success: 107 chars, panel=panel_0004.png
+2026-09-22 08:46:32,448 | INFO     | core.colab_client | generate_voice:200 | Voice request: chars=107, attempt=1/3
+2026-09-22 08:46:38,344 | INFO     | core.colab_client | generate_voice:230 | Voice success: size=330KB, file=audio_0004.mp3
+2026-09-22 08:46:57,248 | INFO     | core.compositor | render_video_chunk:98 | Building composite frame for panel_0004.png
+2026-09-22 08:46:57,452 | INFO     | core.compositor | render_video_chunk:124 | FFmpeg render: chunk_0004.mp4
+2026-09-22 08:46:59,027 | INFO     | core.compositor | render_video_chunk:145 | Chunk rendered: chunk_0004.mp4, duration=7.0s, size=0.3MB
+2026-09-22 08:46:59,078 | INFO     | core.colab_client | generate_script:103 | Script request: panel=panel_0005.png, attempt=1/3
+2026-09-22 08:47:13,854 | INFO     | core.colab_client | generate_script:132 | Script success: 166 chars, panel=panel_0005.png
+2026-09-22 08:47:15,892 | INFO     | core.colab_client | generate_voice:200 | Voice request: chars=166, attempt=1/3
+2026-09-22 08:47:24,639 | INFO     | core.colab_client | generate_voice:230 | Voice success: size=516KB, file=audio_0005.mp3
+2026-09-22 08:48:33,823 | INFO     | core.compositor | render_video_chunk:98 | Building composite frame for panel_0005.png
+2026-09-22 08:48:34,012 | INFO     | core.compositor | render_video_chunk:124 | FFmpeg render: chunk_0005.mp4
+2026-09-22 08:48:44,637 | INFO     | core.compositor | render_video_chunk:145 | Chunk rendered: chunk_0005.mp4, duration=64.0s, size=0.2MB
+2026-09-22 08:48:44,695 | INFO     | core.colab_client | generate_script:103 | Script request: panel=panel_0006.png, attempt=1/3
+2026-09-22 08:49:11,190 | INFO     | core.colab_client | generate_script:132 | Script success: 303 chars, panel=panel_0006.png
+2026-09-22 08:49:22,042 | INFO     | core.colab_client | generate_voice:200 | Voice request: chars=303, attempt=1/3
+2026-09-22 08:49:37,349 | INFO     | core.colab_client | generate_voice:230 | Voice success: size=934KB, file=audio_0006.mp3
+2026-09-22 08:49:49,724 | INFO     | core.compositor | render_video_chunk:98 | Building composite frame for panel_0006.png
+2026-09-22 08:49:49,968 | INFO     | core.compositor | render_video_chunk:124 | FFmpeg render: chunk_0006.mp4
+2026-09-22 08:50:08,574 | INFO     | core.compositor | render_video_chunk:145 | Chunk rendered: chunk_0006.mp4, duration=72.0s, size=0.7MB
+2026-09-22 08:50:08,631 | INFO     | core.colab_client | generate_script:103 | Script request: panel=panel_0007.png, attempt=1/3
+2026-09-22 08:50:30,087 | INFO     | core.colab_client | generate_script:132 | Script success: 265 chars, panel=panel_0007.png
+2026-09-22 08:50:35,556 | INFO     | core.colab_client | generate_voice:200 | Voice request: chars=265, attempt=1/3
+2026-09-22 08:50:49,110 | INFO     | core.colab_client | generate_voice:230 | Voice success: size=812KB, file=audio_0007.mp3
+2026-09-22 08:50:51,199 | INFO     | core.compositor | render_video_chunk:98 | Building composite frame for panel_0007.png
+2026-09-22 08:50:51,426 | INFO     | core.compositor | render_video_chunk:124 | FFmpeg render: chunk_0007.mp4
+2026-09-22 08:51:06,030 | INFO     | core.compositor | render_video_chunk:145 | Chunk rendered: chunk_0007.mp4, duration=70.0s, size=0.5MB
+2026-09-22 08:51:06,094 | INFO     | core.stitcher | create_concat_file:30 | Concat file written: temp\concat.txt (7 chunks)
+2026-09-22 08:51:06,095 | INFO     | core.stitcher | stitch_final_video:64 | Stitching 7 chunks -> final_output.mp4
+2026-09-22 08:51:06,396 | INFO     | core.stitcher | stitch_final_video:80 | Final video stitched: final_output.mp4, size=2.8 MB
+2026-09-22 15:12:29,617 | INFO     | core.slicer | slice_page:138 | Processing page: Screenshot_20260919-211801.png (720x1600)
+2026-09-22 15:12:29,630 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-22 15:12:29,630 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-22 15:12:29,630 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 4-60 (height=56)
+2026-09-22 15:12:29,630 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 60-153 (height=93)
+2026-09-22 15:12:29,635 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 153-262 (720x109) -> panel_0001.png
+2026-09-22 15:12:29,671 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 262-1276 (720x1014) -> panel_0002.png
+2026-09-22 15:12:29,680 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 1276-1561 (720x285) -> panel_0003.png
+2026-09-22 15:12:29,680 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1561-1589 (height=28)
+2026-09-22 15:12:29,680 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1589-1600 (height=11)
+2026-09-22 15:12:29,719 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 3 panels extracted
+2026-09-22 15:12:29,720 | INFO     | core.colab_client | __init__:42 | ColabClient initialized: base=https://leslie-charge-cards-nodes.trycloudflare.com, timeout=120s, retries=3
+2026-09-22 15:12:30,661 | INFO     | core.colab_client | health_check:55 | Colab health: status=ready, gpu=Tesla T4, vram_free=7.0GB
+2026-09-22 15:12:30,674 | INFO     | core.colab_client | generate_script:103 | Script request: panel=panel_0001.png, attempt=1/3
+2026-09-22 15:12:37,633 | INFO     | core.colab_client | generate_script:132 | Script success: 32 chars, panel=panel_0001.png
+2026-09-22 15:12:46,779 | INFO     | core.colab_client | generate_voice:200 | Voice request: chars=5683, attempt=1/3
+2026-09-22 15:14:46,854 | WARNING  | core.colab_client | generate_voice:238 | Voice timeout after 120s (attempt 1)
+2026-09-22 15:14:46,855 | INFO     | core.colab_client | generate_voice:200 | Voice request: chars=5683, attempt=2/3
+2026-09-22 15:16:47,079 | WARNING  | core.colab_client | generate_voice:238 | Voice timeout after 120s (attempt 2)
+2026-09-22 15:16:47,080 | INFO     | core.colab_client | generate_voice:200 | Voice request: chars=5683, attempt=3/3
+2026-09-22 15:18:58,219 | WARNING  | core.colab_client | generate_voice:238 | Voice timeout after 120s (attempt 3)
+2026-09-22 15:18:58,233 | INFO     | core.colab_client | generate_script:103 | Script request: panel=panel_0002.png, attempt=1/3
+2026-09-22 20:25:58,203 | INFO     | core.workspace | create_workspace:60 | Created new project workspace at C:\Users\welcome\Desktop\New folder\Xrexze\projects\test1
+2026-09-22 20:53:32,245 | INFO     | core.pdf_ingester | run:32 | Starting PDF ingestion for _CH_001_SR_We're_not_a_Couple!_@Starlight_Romance.pdf
+2026-09-22 20:54:54,938 | INFO     | core.pdf_ingester | run:54 | Successfully extracted 26 pages from PDF.
+2026-09-22 20:55:06,617 | INFO     | core.slicer | slice_page:138 | Processing page: page_0001.png (5120x2880)
+2026-09-22 20:55:06,735 | INFO     | core.slicer | slice_page:149 |   Found 0 gutter band(s)
+2026-09-22 20:55:07,507 | INFO     | core.slicer | slice_page:185 |   Panel 1: rows 0-2880 (5120x2880) -> panel_0001.png
+2026-09-22 20:55:08,116 | INFO     | core.slicer | slice_page:138 | Processing page: page_0002.png (1600x20000)
+2026-09-22 20:55:08,301 | INFO     | core.slicer | slice_page:149 |   Found 13 gutter band(s)
+2026-09-22 20:55:08,305 | INFO     | core.slicer | slice_page:185 |   Panel 2: rows 0-101 (1600x101) -> panel_0002.png
+2026-09-22 20:55:08,380 | INFO     | core.slicer | slice_page:185 |   Panel 3: rows 101-1258 (1600x1157) -> panel_0003.png
+2026-09-22 20:55:08,390 | INFO     | core.slicer | slice_page:185 |   Panel 4: rows 1258-1456 (1600x198) -> panel_0004.png
+2026-09-22 20:55:08,399 | INFO     | core.slicer | slice_page:185 |   Panel 5: rows 1456-1556 (1600x100) -> panel_0005.png
+2026-09-22 20:55:08,399 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1556-1641 (height=85)
+2026-09-22 20:55:08,399 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 1641-1726 (height=85)
+2026-09-22 20:55:08,407 | INFO     | core.slicer | slice_page:185 |   Panel 6: rows 1726-1826 (1600x100) -> panel_0006.png
+2026-09-22 20:55:08,415 | INFO     | core.slicer | slice_page:185 |   Panel 7: rows 1826-1965 (1600x139) -> panel_0007.png
+2026-09-22 20:55:08,428 | INFO     | core.slicer | slice_page:185 |   Panel 8: rows 1965-2381 (1600x416) -> panel_0008.png
+2026-09-22 20:55:08,784 | INFO     | core.slicer | slice_page:185 |   Panel 9: rows 2381-7819 (1600x5438) -> panel_0009.png
+2026-09-22 20:55:09,041 | INFO     | core.slicer | slice_page:185 |   Panel 10: rows 7819-13073 (1600x5254) -> panel_0010.png
+2026-09-22 20:55:09,147 | INFO     | core.slicer | slice_page:185 |   Panel 11: rows 13073-15575 (1600x2502) -> panel_0011.png
+2026-09-22 20:55:09,277 | INFO     | core.slicer | slice_page:185 |   Panel 12: rows 15575-18081 (1600x2506) -> panel_0012.png
+2026-09-22 20:55:09,374 | INFO     | core.slicer | slice_page:185 |   Panel 13: rows 18081-20000 (1600x1919) -> panel_0013.png
+2026-09-22 20:55:09,990 | INFO     | core.slicer | slice_page:138 | Processing page: page_0003.png (1600x20000)
+2026-09-22 20:55:10,181 | INFO     | core.slicer | slice_page:149 |   Found 18 gutter band(s)
+2026-09-22 20:55:10,438 | INFO     | core.slicer | slice_page:185 |   Panel 14: rows 0-3867 (1600x3867) -> panel_0014.png
+2026-09-22 20:55:10,453 | INFO     | core.slicer | slice_page:185 |   Panel 15: rows 3867-4641 (1600x774) -> panel_0015.png
+2026-09-22 20:55:10,473 | INFO     | core.slicer | slice_page:185 |   Panel 16: rows 4641-5226 (1600x585) -> panel_0016.png
+2026-09-22 20:55:10,473 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 5226-5246 (height=20)
+2026-09-22 20:55:10,473 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 5246-5297 (height=51)
+2026-09-22 20:55:10,474 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 5297-5351 (height=54)
+2026-09-22 20:55:10,474 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 5351-5371 (height=20)
+2026-09-22 20:55:10,635 | INFO     | core.slicer | slice_page:185 |   Panel 17: rows 5371-7946 (1600x2575) -> panel_0017.png
+2026-09-22 20:55:10,669 | INFO     | core.slicer | slice_page:185 |   Panel 18: rows 7946-9373 (1600x1427) -> panel_0018.png
+2026-09-22 20:55:10,803 | INFO     | core.slicer | slice_page:185 |   Panel 19: rows 9373-11891 (1600x2518) -> panel_0019.png
+2026-09-22 20:55:10,823 | INFO     | core.slicer | slice_page:185 |   Panel 20: rows 11891-12845 (1600x954) -> panel_0020.png
+2026-09-22 20:55:10,832 | INFO     | core.slicer | slice_page:185 |   Panel 21: rows 12845-12991 (1600x146) -> panel_0021.png
+2026-09-22 20:55:11,075 | INFO     | core.slicer | slice_page:185 |   Panel 22: rows 12991-16034 (1600x3043) -> panel_0022.png
+2026-09-22 20:55:11,101 | INFO     | core.slicer | slice_page:185 |   Panel 23: rows 16034-17063 (1600x1029) -> panel_0023.png
+2026-09-22 20:55:11,106 | INFO     | core.slicer | slice_page:185 |   Panel 24: rows 17063-17297 (1600x234) -> panel_0024.png
+2026-09-22 20:55:11,106 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 17297-17330 (height=33)
+2026-09-22 20:55:11,106 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 17330-17367 (height=37)
+2026-09-22 20:55:11,274 | INFO     | core.slicer | slice_page:185 |   Panel 25: rows 17367-19945 (1600x2578) -> panel_0025.png
+2026-09-22 20:55:11,275 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 19945-20000 (height=55)
+2026-09-22 20:55:11,760 | INFO     | core.slicer | slice_page:138 | Processing page: page_0004.png (1600x19770)
+2026-09-22 20:55:11,998 | INFO     | core.slicer | slice_page:149 |   Found 16 gutter band(s)
+2026-09-22 20:55:12,005 | INFO     | core.slicer | slice_page:185 |   Panel 26: rows 0-252 (1600x252) -> panel_0026.png
+2026-09-22 20:55:12,121 | INFO     | core.slicer | slice_page:185 |   Panel 27: rows 252-3027 (1600x2775) -> panel_0027.png
+2026-09-22 20:55:12,390 | INFO     | core.slicer | slice_page:185 |   Panel 28: rows 3027-6467 (1600x3440) -> panel_0028.png
+2026-09-22 20:55:12,648 | INFO     | core.slicer | slice_page:185 |   Panel 29: rows 6467-10905 (1600x4438) -> panel_0029.png
+2026-09-22 20:55:12,721 | INFO     | core.slicer | slice_page:185 |   Panel 30: rows 10905-12545 (1600x1640) -> panel_0030.png
+2026-09-22 20:55:12,725 | INFO     | core.slicer | slice_page:185 |   Panel 31: rows 12545-12670 (1600x125) -> panel_0031.png
+2026-09-22 20:55:12,730 | INFO     | core.slicer | slice_page:185 |   Panel 32: rows 12670-12800 (1600x130) -> panel_0032.png
+2026-09-22 20:55:12,742 | INFO     | core.slicer | slice_page:185 |   Panel 33: rows 12800-12996 (1600x196) -> panel_0033.png
+2026-09-22 20:55:12,930 | INFO     | core.slicer | slice_page:185 |   Panel 34: rows 12996-15563 (1600x2567) -> panel_0034.png
+2026-09-22 20:55:12,939 | INFO     | core.slicer | slice_page:185 |   Panel 35: rows 15563-15761 (1600x198) -> panel_0035.png
+2026-09-22 20:55:12,945 | INFO     | core.slicer | slice_page:185 |   Panel 36: rows 15761-15918 (1600x157) -> panel_0036.png
+2026-09-22 20:55:12,962 | INFO     | core.slicer | slice_page:185 |   Panel 37: rows 15918-16863 (1600x945) -> panel_0037.png
+2026-09-22 20:55:12,978 | INFO     | core.slicer | slice_page:185 |   Panel 38: rows 16863-17804 (1600x941) -> panel_0038.png
+2026-09-22 20:55:12,987 | INFO     | core.slicer | slice_page:185 |   Panel 39: rows 17804-18259 (1600x455) -> panel_0039.png
+2026-09-22 20:55:13,019 | INFO     | core.slicer | slice_page:185 |   Panel 40: rows 18259-19459 (1600x1200) -> panel_0040.png
+2026-09-22 20:55:13,033 | INFO     | core.slicer | slice_page:185 |   Panel 41: rows 19459-19674 (1600x215) -> panel_0041.png
+2026-09-22 20:55:13,034 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 19674-19770 (height=96)
+2026-09-22 20:55:13,617 | INFO     | core.slicer | slice_page:138 | Processing page: page_0005.png (1600x20000)
+2026-09-22 20:55:13,918 | INFO     | core.slicer | slice_page:149 |   Found 12 gutter band(s)
+2026-09-22 20:55:13,919 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-5 (height=5)
+2026-09-22 20:55:14,186 | INFO     | core.slicer | slice_page:185 |   Panel 42: rows 5-3187 (1600x3182) -> panel_0042.png
+2026-09-22 20:55:14,406 | INFO     | core.slicer | slice_page:185 |   Panel 43: rows 3187-6500 (1600x3313) -> panel_0043.png
+2026-09-22 20:55:14,440 | INFO     | core.slicer | slice_page:185 |   Panel 44: rows 6500-7441 (1600x941) -> panel_0044.png
+2026-09-22 20:55:14,584 | INFO     | core.slicer | slice_page:185 |   Panel 45: rows 7441-10088 (1600x2647) -> panel_0045.png
+2026-09-22 20:55:14,785 | INFO     | core.slicer | slice_page:185 |   Panel 46: rows 10088-13207 (1600x3119) -> panel_0046.png
+2026-09-22 20:55:14,845 | INFO     | core.slicer | slice_page:185 |   Panel 47: rows 13207-14151 (1600x944) -> panel_0047.png
+2026-09-22 20:55:14,983 | INFO     | core.slicer | slice_page:185 |   Panel 48: rows 14151-16242 (1600x2091) -> panel_0048.png
+2026-09-22 20:55:15,003 | INFO     | core.slicer | slice_page:185 |   Panel 49: rows 16242-16475 (1600x233) -> panel_0049.png
+2026-09-22 20:55:15,003 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 16475-16536 (height=61)
+2026-09-22 20:55:15,136 | INFO     | core.slicer | slice_page:185 |   Panel 50: rows 16536-19041 (1600x2505) -> panel_0050.png
+2026-09-22 20:55:15,169 | INFO     | core.slicer | slice_page:185 |   Panel 51: rows 19041-19917 (1600x876) -> panel_0051.png
+2026-09-22 20:55:15,170 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 19917-20000 (height=83)
+2026-09-22 20:55:15,938 | INFO     | core.slicer | slice_page:138 | Processing page: page_0006.png (1600x18670)
+2026-09-22 20:55:16,166 | INFO     | core.slicer | slice_page:149 |   Found 14 gutter band(s)
+2026-09-22 20:55:16,166 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-89 (height=89)
+2026-09-22 20:55:16,408 | INFO     | core.slicer | slice_page:185 |   Panel 52: rows 89-4499 (1600x4410) -> panel_0052.png
+2026-09-22 20:55:16,486 | INFO     | core.slicer | slice_page:185 |   Panel 53: rows 4499-6779 (1600x2280) -> panel_0053.png
+2026-09-22 20:55:16,563 | INFO     | core.slicer | slice_page:185 |   Panel 54: rows 6779-8785 (1600x2006) -> panel_0054.png
+2026-09-22 20:55:16,588 | INFO     | core.slicer | slice_page:185 |   Panel 55: rows 8785-9920 (1600x1135) -> panel_0055.png
+2026-09-22 20:55:16,849 | INFO     | core.slicer | slice_page:185 |   Panel 56: rows 9920-14412 (1600x4492) -> panel_0056.png
+2026-09-22 20:55:16,963 | INFO     | core.slicer | slice_page:185 |   Panel 57: rows 14412-17062 (1600x2650) -> panel_0057.png
+2026-09-22 20:55:16,976 | INFO     | core.slicer | slice_page:185 |   Panel 58: rows 17062-17654 (1600x592) -> panel_0058.png
+2026-09-22 20:55:16,988 | INFO     | core.slicer | slice_page:185 |   Panel 59: rows 17654-17866 (1600x212) -> panel_0059.png
+2026-09-22 20:55:16,995 | INFO     | core.slicer | slice_page:185 |   Panel 60: rows 17866-18042 (1600x176) -> panel_0060.png
+2026-09-22 20:55:17,005 | INFO     | core.slicer | slice_page:185 |   Panel 61: rows 18042-18167 (1600x125) -> panel_0061.png
+2026-09-22 20:55:17,015 | INFO     | core.slicer | slice_page:185 |   Panel 62: rows 18167-18268 (1600x101) -> panel_0062.png
+2026-09-22 20:55:17,021 | INFO     | core.slicer | slice_page:185 |   Panel 63: rows 18268-18368 (1600x100) -> panel_0063.png
+2026-09-22 20:55:17,030 | INFO     | core.slicer | slice_page:185 |   Panel 64: rows 18368-18608 (1600x240) -> panel_0064.png
+2026-09-22 20:55:17,030 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 18608-18670 (height=62)
+2026-09-22 20:55:17,449 | INFO     | core.slicer | slice_page:138 | Processing page: page_0007.png (1600x17990)
+2026-09-22 20:55:17,632 | INFO     | core.slicer | slice_page:149 |   Found 35 gutter band(s)
+2026-09-22 20:55:17,632 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-4 (height=4)
+2026-09-22 20:55:17,664 | INFO     | core.slicer | slice_page:185 |   Panel 65: rows 4-1610 (1600x1606) -> panel_0065.png
+2026-09-22 20:55:17,846 | INFO     | core.slicer | slice_page:185 |   Panel 66: rows 1610-5471 (1600x3861) -> panel_0066.png
+2026-09-22 20:55:17,857 | INFO     | core.slicer | slice_page:185 |   Panel 67: rows 5471-5906 (1600x435) -> panel_0067.png
+2026-09-22 20:55:17,865 | INFO     | core.slicer | slice_page:185 |   Panel 68: rows 5906-6035 (1600x129) -> panel_0068.png
+2026-09-22 20:55:17,866 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 6035-6088 (height=53)
+2026-09-22 20:55:17,872 | INFO     | core.slicer | slice_page:185 |   Panel 69: rows 6088-6188 (1600x100) -> panel_0069.png
+2026-09-22 20:55:17,872 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 6188-6225 (height=37)
+2026-09-22 20:55:17,872 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 6225-6299 (height=74)
+2026-09-22 20:55:17,873 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 6299-6366 (height=67)
+2026-09-22 20:55:17,873 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 6366-6431 (height=65)
+2026-09-22 20:55:17,873 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 6431-6507 (height=76)
+2026-09-22 20:55:17,881 | INFO     | core.slicer | slice_page:185 |   Panel 70: rows 6507-6667 (1600x160) -> panel_0070.png
+2026-09-22 20:55:17,890 | INFO     | core.slicer | slice_page:185 |   Panel 71: rows 6667-6904 (1600x237) -> panel_0071.png
+2026-09-22 20:55:17,899 | INFO     | core.slicer | slice_page:185 |   Panel 72: rows 6904-7010 (1600x106) -> panel_0072.png
+2026-09-22 20:55:17,899 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 7010-7052 (height=42)
+2026-09-22 20:55:17,900 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 7052-7099 (height=47)
+2026-09-22 20:55:17,901 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 7099-7163 (height=64)
+2026-09-22 20:55:17,914 | INFO     | core.slicer | slice_page:185 |   Panel 73: rows 7163-7372 (1600x209) -> panel_0073.png
+2026-09-22 20:55:17,914 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 7372-7395 (height=23)
+2026-09-22 20:55:17,933 | INFO     | core.slicer | slice_page:185 |   Panel 74: rows 7395-7724 (1600x329) -> panel_0074.png
+2026-09-22 20:55:17,938 | INFO     | core.slicer | slice_page:185 |   Panel 75: rows 7724-7857 (1600x133) -> panel_0075.png
+2026-09-22 20:55:17,941 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 7857-7892 (height=35)
+2026-09-22 20:55:17,941 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 7892-7984 (height=92)
+2026-09-22 20:55:17,950 | INFO     | core.slicer | slice_page:185 |   Panel 76: rows 7984-8240 (1600x256) -> panel_0076.png
+2026-09-22 20:55:17,957 | INFO     | core.slicer | slice_page:185 |   Panel 77: rows 8240-8601 (1600x361) -> panel_0077.png
+2026-09-22 20:55:17,963 | INFO     | core.slicer | slice_page:185 |   Panel 78: rows 8601-8888 (1600x287) -> panel_0078.png
+2026-09-22 20:55:18,157 | INFO     | core.slicer | slice_page:185 |   Panel 79: rows 8888-12431 (1600x3543) -> panel_0079.png
+2026-09-22 20:55:18,169 | INFO     | core.slicer | slice_page:185 |   Panel 80: rows 12431-12969 (1600x538) -> panel_0080.png
+2026-09-22 20:55:18,179 | INFO     | core.slicer | slice_page:185 |   Panel 81: rows 12969-13109 (1600x140) -> panel_0081.png
+2026-09-22 20:55:18,187 | INFO     | core.slicer | slice_page:185 |   Panel 82: rows 13109-13239 (1600x130) -> panel_0082.png
+2026-09-22 20:55:18,193 | INFO     | core.slicer | slice_page:185 |   Panel 83: rows 13239-13389 (1600x150) -> panel_0083.png
+2026-09-22 20:55:18,194 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 13389-13452 (height=63)
+2026-09-22 20:55:18,199 | INFO     | core.slicer | slice_page:185 |   Panel 84: rows 13452-13775 (1600x323) -> panel_0084.png
+2026-09-22 20:55:18,375 | INFO     | core.slicer | slice_page:185 |   Panel 85: rows 13775-17563 (1600x3788) -> panel_0085.png
+2026-09-22 20:55:18,383 | INFO     | core.slicer | slice_page:185 |   Panel 86: rows 17563-17990 (1600x427) -> panel_0086.png
+2026-09-22 20:55:18,824 | INFO     | core.slicer | slice_page:138 | Processing page: page_0008.png (1600x20000)
+2026-09-22 20:55:19,017 | INFO     | core.slicer | slice_page:149 |   Found 25 gutter band(s)
+2026-09-22 20:55:19,020 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-3 (height=3)
+2026-09-22 20:55:19,191 | INFO     | core.slicer | slice_page:185 |   Panel 87: rows 3-3806 (1600x3803) -> panel_0087.png
+2026-09-22 20:55:19,217 | INFO     | core.slicer | slice_page:185 |   Panel 88: rows 3806-5097 (1600x1291) -> panel_0088.png
+2026-09-22 20:55:19,256 | INFO     | core.slicer | slice_page:185 |   Panel 89: rows 5097-6737 (1600x1640) -> panel_0089.png
+2026-09-22 20:55:19,268 | INFO     | core.slicer | slice_page:185 |   Panel 90: rows 6737-7353 (1600x616) -> panel_0090.png
+2026-09-22 20:55:19,276 | INFO     | core.slicer | slice_page:185 |   Panel 91: rows 7353-7534 (1600x181) -> panel_0091.png
+2026-09-22 20:55:19,286 | INFO     | core.slicer | slice_page:185 |   Panel 92: rows 7534-7740 (1600x206) -> panel_0092.png
+2026-09-22 20:55:19,290 | INFO     | core.slicer | slice_page:185 |   Panel 93: rows 7740-7853 (1600x113) -> panel_0093.png
+2026-09-22 20:55:19,328 | INFO     | core.slicer | slice_page:185 |   Panel 94: rows 7853-8706 (1600x853) -> panel_0094.png
+2026-09-22 20:55:19,349 | INFO     | core.slicer | slice_page:185 |   Panel 95: rows 8706-9551 (1600x845) -> panel_0095.png
+2026-09-22 20:55:19,374 | INFO     | core.slicer | slice_page:185 |   Panel 96: rows 9551-10422 (1600x871) -> panel_0096.png
+2026-09-22 20:55:19,395 | INFO     | core.slicer | slice_page:185 |   Panel 97: rows 10422-10668 (1600x246) -> panel_0097.png
+2026-09-22 20:55:19,570 | INFO     | core.slicer | slice_page:185 |   Panel 98: rows 10668-13845 (1600x3177) -> panel_0098.png
+2026-09-22 20:55:19,596 | INFO     | core.slicer | slice_page:185 |   Panel 99: rows 13845-15196 (1600x1351) -> panel_0099.png
+2026-09-22 20:55:19,622 | INFO     | core.slicer | slice_page:185 |   Panel 100: rows 15196-16191 (1600x995) -> panel_0100.png
+2026-09-22 20:55:19,631 | INFO     | core.slicer | slice_page:185 |   Panel 101: rows 16191-16636 (1600x445) -> panel_0101.png
+2026-09-22 20:55:19,659 | INFO     | core.slicer | slice_page:185 |   Panel 102: rows 16636-17187 (1600x551) -> panel_0102.png
+2026-09-22 20:55:19,735 | INFO     | core.slicer | slice_page:185 |   Panel 103: rows 17187-18743 (1600x1556) -> panel_0103.png
+2026-09-22 20:55:19,747 | INFO     | core.slicer | slice_page:185 |   Panel 104: rows 18743-19246 (1600x503) -> panel_0104.png
+2026-09-22 20:55:19,747 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 19246-19314 (height=68)
+2026-09-22 20:55:19,747 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 19314-19399 (height=85)
+2026-09-22 20:55:19,764 | INFO     | core.slicer | slice_page:185 |   Panel 105: rows 19399-19587 (1600x188) -> panel_0105.png
+2026-09-22 20:55:19,792 | INFO     | core.slicer | slice_page:185 |   Panel 106: rows 19587-19688 (1600x101) -> panel_0106.png
+2026-09-22 20:55:19,806 | INFO     | core.slicer | slice_page:185 |   Panel 107: rows 19688-19820 (1600x132) -> panel_0107.png
+2026-09-22 20:55:19,835 | INFO     | core.slicer | slice_page:185 |   Panel 108: rows 19820-19964 (1600x144) -> panel_0108.png
+2026-09-22 20:55:19,837 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 19964-20000 (height=36)
+2026-09-22 20:55:20,300 | INFO     | core.slicer | slice_page:138 | Processing page: page_0009.png (1600x16550)
+2026-09-22 20:55:20,473 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-22 20:55:20,473 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-13 (height=13)
+2026-09-22 20:55:20,484 | INFO     | core.slicer | slice_page:185 |   Panel 109: rows 13-183 (1600x170) -> panel_0109.png
+2026-09-22 20:55:20,521 | INFO     | core.slicer | slice_page:185 |   Panel 110: rows 183-880 (1600x697) -> panel_0110.png
+2026-09-22 20:55:20,552 | INFO     | core.slicer | slice_page:185 |   Panel 111: rows 880-1442 (1600x562) -> panel_0111.png
+2026-09-22 20:55:20,745 | INFO     | core.slicer | slice_page:185 |   Panel 112: rows 1442-5195 (1600x3753) -> panel_0112.png
+2026-09-22 20:55:20,895 | INFO     | core.slicer | slice_page:185 |   Panel 113: rows 5195-8316 (1600x3121) -> panel_0113.png
+2026-09-22 20:55:21,065 | INFO     | core.slicer | slice_page:185 |   Panel 114: rows 8316-12374 (1600x4058) -> panel_0114.png
+2026-09-22 20:55:21,227 | INFO     | core.slicer | slice_page:185 |   Panel 115: rows 12374-15918 (1600x3544) -> panel_0115.png
+2026-09-22 20:55:21,244 | INFO     | core.slicer | slice_page:185 |   Panel 116: rows 15918-16550 (1600x632) -> panel_0116.png
+2026-09-22 20:55:21,677 | INFO     | core.slicer | slice_page:138 | Processing page: page_0010.png (1600x18950)
+2026-09-22 20:55:21,869 | INFO     | core.slicer | slice_page:149 |   Found 10 gutter band(s)
+2026-09-22 20:55:22,056 | INFO     | core.slicer | slice_page:185 |   Panel 117: rows 0-3819 (1600x3819) -> panel_0117.png
+2026-09-22 20:55:22,177 | INFO     | core.slicer | slice_page:185 |   Panel 118: rows 3819-6619 (1600x2800) -> panel_0118.png
+2026-09-22 20:55:22,178 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 6619-6693 (height=74)
+2026-09-22 20:55:22,183 | INFO     | core.slicer | slice_page:185 |   Panel 119: rows 6693-6943 (1600x250) -> panel_0119.png
+2026-09-22 20:55:22,351 | INFO     | core.slicer | slice_page:185 |   Panel 120: rows 6943-11361 (1600x4418) -> panel_0120.png
+2026-09-22 20:55:22,438 | INFO     | core.slicer | slice_page:185 |   Panel 121: rows 11361-14636 (1600x3275) -> panel_0121.png
+2026-09-22 20:55:22,613 | INFO     | core.slicer | slice_page:185 |   Panel 122: rows 14636-17895 (1600x3259) -> panel_0122.png
+2026-09-22 20:55:22,622 | INFO     | core.slicer | slice_page:185 |   Panel 123: rows 17895-18032 (1600x137) -> panel_0123.png
+2026-09-22 20:55:22,623 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 18032-18108 (height=76)
+2026-09-22 20:55:22,635 | INFO     | core.slicer | slice_page:185 |   Panel 124: rows 18108-18605 (1600x497) -> panel_0124.png
+2026-09-22 20:55:22,643 | INFO     | core.slicer | slice_page:185 |   Panel 125: rows 18605-18950 (1600x345) -> panel_0125.png
+2026-09-22 20:55:23,121 | INFO     | core.slicer | slice_page:138 | Processing page: page_0011.png (1600x18260)
+2026-09-22 20:55:23,303 | INFO     | core.slicer | slice_page:149 |   Found 13 gutter band(s)
+2026-09-22 20:55:23,506 | INFO     | core.slicer | slice_page:185 |   Panel 126: rows 0-2177 (1600x2177) -> panel_0126.png
+2026-09-22 20:55:23,536 | INFO     | core.slicer | slice_page:185 |   Panel 127: rows 2177-3149 (1600x972) -> panel_0127.png
+2026-09-22 20:55:23,608 | INFO     | core.slicer | slice_page:185 |   Panel 128: rows 3149-4925 (1600x1776) -> panel_0128.png
+2026-09-22 20:55:23,671 | INFO     | core.slicer | slice_page:185 |   Panel 129: rows 4925-6807 (1600x1882) -> panel_0129.png
+2026-09-22 20:55:23,697 | INFO     | core.slicer | slice_page:185 |   Panel 130: rows 6807-7952 (1600x1145) -> panel_0130.png
+2026-09-22 20:55:23,852 | INFO     | core.slicer | slice_page:185 |   Panel 131: rows 7952-9842 (1600x1890) -> panel_0131.png
+2026-09-22 20:55:23,876 | INFO     | core.slicer | slice_page:185 |   Panel 132: rows 9842-10767 (1600x925) -> panel_0132.png
+2026-09-22 20:55:23,918 | INFO     | core.slicer | slice_page:185 |   Panel 133: rows 10767-11532 (1600x765) -> panel_0133.png
+2026-09-22 20:55:23,960 | INFO     | core.slicer | slice_page:185 |   Panel 134: rows 11532-12604 (1600x1072) -> panel_0134.png
+2026-09-22 20:55:23,976 | INFO     | core.slicer | slice_page:185 |   Panel 135: rows 12604-12955 (1600x351) -> panel_0135.png
+2026-09-22 20:55:23,977 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 12955-12974 (height=19)
+2026-09-22 20:55:24,082 | INFO     | core.slicer | slice_page:185 |   Panel 136: rows 12974-13624 (1600x650) -> panel_0136.png
+2026-09-22 20:55:24,334 | INFO     | core.slicer | slice_page:185 |   Panel 137: rows 13624-17972 (1600x4348) -> panel_0137.png
+2026-09-22 20:55:24,340 | INFO     | core.slicer | slice_page:185 |   Panel 138: rows 17972-18260 (1600x288) -> panel_0138.png
+2026-09-22 20:55:24,749 | INFO     | core.slicer | slice_page:138 | Processing page: page_0012.png (1600x19480)
+2026-09-22 20:55:24,963 | INFO     | core.slicer | slice_page:149 |   Found 10 gutter band(s)
+2026-09-22 20:55:24,964 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-11 (height=11)
+2026-09-22 20:55:25,078 | INFO     | core.slicer | slice_page:185 |   Panel 139: rows 11-2767 (1600x2756) -> panel_0139.png
+2026-09-22 20:55:25,086 | INFO     | core.slicer | slice_page:185 |   Panel 140: rows 2767-2929 (1600x162) -> panel_0140.png
+2026-09-22 20:55:25,092 | INFO     | core.slicer | slice_page:185 |   Panel 141: rows 2929-3231 (1600x302) -> panel_0141.png
+2026-09-22 20:55:25,356 | INFO     | core.slicer | slice_page:185 |   Panel 142: rows 3231-7533 (1600x4302) -> panel_0142.png
+2026-09-22 20:55:25,395 | INFO     | core.slicer | slice_page:185 |   Panel 143: rows 7533-8879 (1600x1346) -> panel_0143.png
+2026-09-22 20:55:25,403 | INFO     | core.slicer | slice_page:185 |   Panel 144: rows 8879-9044 (1600x165) -> panel_0144.png
+2026-09-22 20:55:25,527 | INFO     | core.slicer | slice_page:185 |   Panel 145: rows 9044-11865 (1600x2821) -> panel_0145.png
+2026-09-22 20:55:25,650 | INFO     | core.slicer | slice_page:185 |   Panel 146: rows 11865-14867 (1600x3002) -> panel_0146.png
+2026-09-22 20:55:25,859 | INFO     | core.slicer | slice_page:185 |   Panel 147: rows 14867-19024 (1600x4157) -> panel_0147.png
+2026-09-22 20:55:25,871 | INFO     | core.slicer | slice_page:185 |   Panel 148: rows 19024-19480 (1600x456) -> panel_0148.png
+2026-09-22 20:55:26,394 | INFO     | core.slicer | slice_page:138 | Processing page: page_0013.png (1600x18950)
+2026-09-22 20:55:26,586 | INFO     | core.slicer | slice_page:149 |   Found 9 gutter band(s)
+2026-09-22 20:55:26,682 | INFO     | core.slicer | slice_page:185 |   Panel 149: rows 0-2510 (1600x2510) -> panel_0149.png
+2026-09-22 20:55:26,716 | INFO     | core.slicer | slice_page:185 |   Panel 150: rows 2510-3620 (1600x1110) -> panel_0150.png
+2026-09-22 20:55:26,716 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 3620-3678 (height=58)
+2026-09-22 20:55:26,950 | INFO     | core.slicer | slice_page:185 |   Panel 151: rows 3678-6683 (1600x3005) -> panel_0151.png
+2026-09-22 20:55:27,147 | INFO     | core.slicer | slice_page:185 |   Panel 152: rows 6683-10273 (1600x3590) -> panel_0152.png
+2026-09-22 20:55:27,171 | INFO     | core.slicer | slice_page:185 |   Panel 153: rows 10273-11291 (1600x1018) -> panel_0153.png
+2026-09-22 20:55:27,243 | INFO     | core.slicer | slice_page:185 |   Panel 154: rows 11291-13019 (1600x1728) -> panel_0154.png
+2026-09-22 20:55:27,398 | INFO     | core.slicer | slice_page:185 |   Panel 155: rows 13019-16713 (1600x3694) -> panel_0155.png
+2026-09-22 20:55:27,439 | INFO     | core.slicer | slice_page:185 |   Panel 156: rows 16713-18370 (1600x1657) -> panel_0156.png
+2026-09-22 20:55:27,450 | INFO     | core.slicer | slice_page:185 |   Panel 157: rows 18370-18950 (1600x580) -> panel_0157.png
+2026-09-22 20:55:27,881 | INFO     | core.slicer | slice_page:138 | Processing page: page_0014.png (1600x15970)
+2026-09-22 20:55:28,028 | INFO     | core.slicer | slice_page:149 |   Found 4 gutter band(s)
+2026-09-22 20:55:28,164 | INFO     | core.slicer | slice_page:185 |   Panel 158: rows 0-3191 (1600x3191) -> panel_0158.png
+2026-09-22 20:55:28,315 | INFO     | core.slicer | slice_page:185 |   Panel 159: rows 3191-6765 (1600x3574) -> panel_0159.png
+2026-09-22 20:55:28,540 | INFO     | core.slicer | slice_page:185 |   Panel 160: rows 6765-12039 (1600x5274) -> panel_0160.png
+2026-09-22 20:55:28,702 | INFO     | core.slicer | slice_page:185 |   Panel 161: rows 12039-15754 (1600x3715) -> panel_0161.png
+2026-09-22 20:55:28,706 | INFO     | core.slicer | slice_page:185 |   Panel 162: rows 15754-15970 (1600x216) -> panel_0162.png
+2026-09-22 20:55:29,253 | INFO     | core.slicer | slice_page:138 | Processing page: page_0015.png (1600x17940)
+2026-09-22 20:55:29,439 | INFO     | core.slicer | slice_page:149 |   Found 17 gutter band(s)
+2026-09-22 20:55:29,631 | INFO     | core.slicer | slice_page:185 |   Panel 163: rows 0-4799 (1600x4799) -> panel_0163.png
+2026-09-22 20:55:29,778 | INFO     | core.slicer | slice_page:185 |   Panel 164: rows 4799-8329 (1600x3530) -> panel_0164.png
+2026-09-22 20:55:29,798 | INFO     | core.slicer | slice_page:185 |   Panel 165: rows 8329-9322 (1600x993) -> panel_0165.png
+2026-09-22 20:55:29,799 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 9322-9354 (height=32)
+2026-09-22 20:55:29,807 | INFO     | core.slicer | slice_page:185 |   Panel 166: rows 9354-9635 (1600x281) -> panel_0166.png
+2026-09-22 20:55:29,807 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 9635-9684 (height=49)
+2026-09-22 20:55:29,807 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 9684-9735 (height=51)
+2026-09-22 20:55:29,984 | INFO     | core.slicer | slice_page:185 |   Panel 167: rows 9735-12045 (1600x2310) -> panel_0167.png
+2026-09-22 20:55:29,995 | INFO     | core.slicer | slice_page:185 |   Panel 168: rows 12045-12343 (1600x298) -> panel_0168.png
+2026-09-22 20:55:30,002 | INFO     | core.slicer | slice_page:185 |   Panel 169: rows 12343-12659 (1600x316) -> panel_0169.png
+2026-09-22 20:55:30,009 | INFO     | core.slicer | slice_page:185 |   Panel 170: rows 12659-13033 (1600x374) -> panel_0170.png
+2026-09-22 20:55:30,055 | INFO     | core.slicer | slice_page:185 |   Panel 171: rows 13033-14328 (1600x1295) -> panel_0171.png
+2026-09-22 20:55:30,121 | INFO     | core.slicer | slice_page:185 |   Panel 172: rows 14328-16475 (1600x2147) -> panel_0172.png
+2026-09-22 20:55:30,135 | INFO     | core.slicer | slice_page:185 |   Panel 173: rows 16475-17171 (1600x696) -> panel_0173.png
+2026-09-22 20:55:30,136 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 17171-17261 (height=90)
+2026-09-22 20:55:30,145 | INFO     | core.slicer | slice_page:185 |   Panel 174: rows 17261-17507 (1600x246) -> panel_0174.png
+2026-09-22 20:55:30,153 | INFO     | core.slicer | slice_page:185 |   Panel 175: rows 17507-17808 (1600x301) -> panel_0175.png
+2026-09-22 20:55:30,160 | INFO     | core.slicer | slice_page:185 |   Panel 176: rows 17808-17940 (1600x132) -> panel_0176.png
+2026-09-22 20:55:30,885 | INFO     | core.slicer | slice_page:138 | Processing page: page_0016.png (1600x18290)
+2026-09-22 20:55:31,068 | INFO     | core.slicer | slice_page:149 |   Found 10 gutter band(s)
+2026-09-22 20:55:31,245 | INFO     | core.slicer | slice_page:185 |   Panel 177: rows 0-3332 (1600x3332) -> panel_0177.png
+2026-09-22 20:55:31,391 | INFO     | core.slicer | slice_page:185 |   Panel 178: rows 3332-6692 (1600x3360) -> panel_0178.png
+2026-09-22 20:55:31,573 | INFO     | core.slicer | slice_page:185 |   Panel 179: rows 6692-10761 (1600x4069) -> panel_0179.png
+2026-09-22 20:55:31,595 | INFO     | core.slicer | slice_page:185 |   Panel 180: rows 10761-11746 (1600x985) -> panel_0180.png
+2026-09-22 20:55:31,608 | INFO     | core.slicer | slice_page:185 |   Panel 181: rows 11746-12147 (1600x401) -> panel_0181.png
+2026-09-22 20:55:31,690 | INFO     | core.slicer | slice_page:185 |   Panel 182: rows 12147-13287 (1600x1140) -> panel_0182.png
+2026-09-22 20:55:31,693 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 13287-13308 (height=21)
+2026-09-22 20:55:31,693 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 13308-13336 (height=28)
+2026-09-22 20:55:31,718 | INFO     | core.slicer | slice_page:185 |   Panel 183: rows 13336-14320 (1600x984) -> panel_0183.png
+2026-09-22 20:55:31,881 | INFO     | core.slicer | slice_page:185 |   Panel 184: rows 14320-17695 (1600x3375) -> panel_0184.png
+2026-09-22 20:55:31,899 | INFO     | core.slicer | slice_page:185 |   Panel 185: rows 17695-18290 (1600x595) -> panel_0185.png
+2026-09-22 20:55:32,415 | INFO     | core.slicer | slice_page:138 | Processing page: page_0017.png (1600x19130)
+2026-09-22 20:55:32,730 | INFO     | core.slicer | slice_page:149 |   Found 11 gutter band(s)
+2026-09-22 20:55:32,952 | INFO     | core.slicer | slice_page:185 |   Panel 186: rows 0-4138 (1600x4138) -> panel_0186.png
+2026-09-22 20:55:33,195 | INFO     | core.slicer | slice_page:185 |   Panel 187: rows 4138-7702 (1600x3564) -> panel_0187.png
+2026-09-22 20:55:33,489 | INFO     | core.slicer | slice_page:185 |   Panel 188: rows 7702-11782 (1600x4080) -> panel_0188.png
+2026-09-22 20:55:33,621 | INFO     | core.slicer | slice_page:185 |   Panel 189: rows 11782-14449 (1600x2667) -> panel_0189.png
+2026-09-22 20:55:33,634 | INFO     | core.slicer | slice_page:185 |   Panel 190: rows 14449-15147 (1600x698) -> panel_0190.png
+2026-09-22 20:55:33,680 | INFO     | core.slicer | slice_page:185 |   Panel 191: rows 15147-16345 (1600x1198) -> panel_0191.png
+2026-09-22 20:55:33,680 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 16345-16412 (height=67)
+2026-09-22 20:55:33,681 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 16412-16453 (height=41)
+2026-09-22 20:55:33,693 | INFO     | core.slicer | slice_page:185 |   Panel 192: rows 16453-16702 (1600x249) -> panel_0192.png
+2026-09-22 20:55:33,696 | INFO     | core.slicer | slice_page:185 |   Panel 193: rows 16702-16832 (1600x130) -> panel_0193.png
+2026-09-22 20:55:33,712 | INFO     | core.slicer | slice_page:185 |   Panel 194: rows 16832-17965 (1600x1133) -> panel_0194.png
+2026-09-22 20:55:33,739 | INFO     | core.slicer | slice_page:185 |   Panel 195: rows 17965-19130 (1600x1165) -> panel_0195.png
+2026-09-22 20:55:34,200 | INFO     | core.slicer | slice_page:138 | Processing page: page_0018.png (1600x18570)
+2026-09-22 20:55:34,380 | INFO     | core.slicer | slice_page:149 |   Found 5 gutter band(s)
+2026-09-22 20:55:34,539 | INFO     | core.slicer | slice_page:185 |   Panel 196: rows 0-2561 (1600x2561) -> panel_0196.png
+2026-09-22 20:55:34,690 | INFO     | core.slicer | slice_page:185 |   Panel 197: rows 2561-5974 (1600x3413) -> panel_0197.png
+2026-09-22 20:55:34,865 | INFO     | core.slicer | slice_page:185 |   Panel 198: rows 5974-10204 (1600x4230) -> panel_0198.png
+2026-09-22 20:55:35,142 | INFO     | core.slicer | slice_page:185 |   Panel 199: rows 10204-14489 (1600x4285) -> panel_0199.png
+2026-09-22 20:55:35,441 | INFO     | core.slicer | slice_page:185 |   Panel 200: rows 14489-18397 (1600x3908) -> panel_0200.png
+2026-09-22 20:55:35,446 | INFO     | core.slicer | slice_page:185 |   Panel 201: rows 18397-18570 (1600x173) -> panel_0201.png
+2026-09-22 20:55:36,026 | INFO     | core.slicer | slice_page:138 | Processing page: page_0019.png (1600x17950)
+2026-09-22 20:55:36,202 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-22 20:55:36,359 | INFO     | core.slicer | slice_page:185 |   Panel 202: rows 0-2688 (1600x2688) -> panel_0202.png
+2026-09-22 20:55:36,381 | INFO     | core.slicer | slice_page:185 |   Panel 203: rows 2688-3722 (1600x1034) -> panel_0203.png
+2026-09-22 20:55:36,422 | INFO     | core.slicer | slice_page:185 |   Panel 204: rows 3722-5257 (1600x1535) -> panel_0204.png
+2026-09-22 20:55:36,697 | INFO     | core.slicer | slice_page:185 |   Panel 205: rows 5257-10644 (1600x5387) -> panel_0205.png
+2026-09-22 20:55:36,767 | INFO     | core.slicer | slice_page:185 |   Panel 206: rows 10644-12426 (1600x1782) -> panel_0206.png
+2026-09-22 20:55:36,870 | INFO     | core.slicer | slice_page:185 |   Panel 207: rows 12426-15078 (1600x2652) -> panel_0207.png
+2026-09-22 20:55:37,020 | INFO     | core.slicer | slice_page:185 |   Panel 208: rows 15078-17821 (1600x2743) -> panel_0208.png
+2026-09-22 20:55:37,030 | INFO     | core.slicer | slice_page:185 |   Panel 209: rows 17821-17950 (1600x129) -> panel_0209.png
+2026-09-22 20:55:37,680 | INFO     | core.slicer | slice_page:138 | Processing page: page_0020.png (1600x19050)
+2026-09-22 20:55:37,882 | INFO     | core.slicer | slice_page:149 |   Found 6 gutter band(s)
+2026-09-22 20:55:37,883 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-9 (height=9)
+2026-09-22 20:55:38,084 | INFO     | core.slicer | slice_page:185 |   Panel 210: rows 9-2797 (1600x2788) -> panel_0210.png
+2026-09-22 20:55:38,282 | INFO     | core.slicer | slice_page:185 |   Panel 211: rows 2797-6807 (1600x4010) -> panel_0211.png
+2026-09-22 20:55:38,469 | INFO     | core.slicer | slice_page:185 |   Panel 212: rows 6807-10747 (1600x3940) -> panel_0212.png
+2026-09-22 20:55:38,736 | INFO     | core.slicer | slice_page:185 |   Panel 213: rows 10747-15250 (1600x4503) -> panel_0213.png
+2026-09-22 20:55:38,983 | INFO     | core.slicer | slice_page:185 |   Panel 214: rows 15250-18711 (1600x3461) -> panel_0214.png
+2026-09-22 20:55:38,989 | INFO     | core.slicer | slice_page:185 |   Panel 215: rows 18711-19050 (1600x339) -> panel_0215.png
+2026-09-22 20:55:39,476 | INFO     | core.slicer | slice_page:138 | Processing page: page_0021.png (1600x19080)
+2026-09-22 20:55:39,673 | INFO     | core.slicer | slice_page:149 |   Found 7 gutter band(s)
+2026-09-22 20:55:39,673 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-3 (height=3)
+2026-09-22 20:55:39,875 | INFO     | core.slicer | slice_page:185 |   Panel 216: rows 3-3775 (1600x3772) -> panel_0216.png
+2026-09-22 20:55:40,016 | INFO     | core.slicer | slice_page:185 |   Panel 217: rows 3775-7298 (1600x3523) -> panel_0217.png
+2026-09-22 20:55:40,199 | INFO     | core.slicer | slice_page:185 |   Panel 218: rows 7298-11374 (1600x4076) -> panel_0218.png
+2026-09-22 20:55:40,360 | INFO     | core.slicer | slice_page:185 |   Panel 219: rows 11374-14829 (1600x3455) -> panel_0219.png
+2026-09-22 20:55:40,510 | INFO     | core.slicer | slice_page:185 |   Panel 220: rows 14829-17952 (1600x3123) -> panel_0220.png
+2026-09-22 20:55:40,539 | INFO     | core.slicer | slice_page:185 |   Panel 221: rows 17952-19009 (1600x1057) -> panel_0221.png
+2026-09-22 20:55:40,539 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 19009-19080 (height=71)
+2026-09-22 20:55:41,081 | INFO     | core.slicer | slice_page:138 | Processing page: page_0022.png (1600x18420)
+2026-09-22 20:55:41,266 | INFO     | core.slicer | slice_page:149 |   Found 4 gutter band(s)
+2026-09-22 20:55:41,586 | INFO     | core.slicer | slice_page:185 |   Panel 222: rows 0-5803 (1600x5803) -> panel_0222.png
+2026-09-22 20:55:41,834 | INFO     | core.slicer | slice_page:185 |   Panel 223: rows 5803-10047 (1600x4244) -> panel_0223.png
+2026-09-22 20:55:42,050 | INFO     | core.slicer | slice_page:185 |   Panel 224: rows 10047-14017 (1600x3970) -> panel_0224.png
+2026-09-22 20:55:42,324 | INFO     | core.slicer | slice_page:185 |   Panel 225: rows 14017-18235 (1600x4218) -> panel_0225.png
+2026-09-22 20:55:42,337 | INFO     | core.slicer | slice_page:185 |   Panel 226: rows 18235-18420 (1600x185) -> panel_0226.png
+2026-09-22 20:55:43,032 | INFO     | core.slicer | slice_page:138 | Processing page: page_0023.png (1600x20000)
+2026-09-22 20:55:43,230 | INFO     | core.slicer | slice_page:149 |   Found 8 gutter band(s)
+2026-09-22 20:55:43,230 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 0-3 (height=3)
+2026-09-22 20:55:43,383 | INFO     | core.slicer | slice_page:185 |   Panel 227: rows 3-3321 (1600x3318) -> panel_0227.png
+2026-09-22 20:55:43,576 | INFO     | core.slicer | slice_page:185 |   Panel 228: rows 3321-7489 (1600x4168) -> panel_0228.png
+2026-09-22 20:55:43,729 | INFO     | core.slicer | slice_page:185 |   Panel 229: rows 7489-10649 (1600x3160) -> panel_0229.png
+2026-09-22 20:55:43,955 | INFO     | core.slicer | slice_page:185 |   Panel 230: rows 10649-14111 (1600x3462) -> panel_0230.png
+2026-09-22 20:55:44,054 | INFO     | core.slicer | slice_page:185 |   Panel 231: rows 14111-16780 (1600x2669) -> panel_0231.png
+2026-09-22 20:55:44,141 | INFO     | core.slicer | slice_page:185 |   Panel 232: rows 16780-18800 (1600x2020) -> panel_0232.png
+2026-09-22 20:55:44,164 | INFO     | core.slicer | slice_page:185 |   Panel 233: rows 18800-19828 (1600x1028) -> panel_0233.png
+2026-09-22 20:55:44,168 | INFO     | core.slicer | slice_page:185 |   Panel 234: rows 19828-20000 (1600x172) -> panel_0234.png
+2026-09-22 20:55:44,589 | INFO     | core.slicer | slice_page:138 | Processing page: page_0024.png (1600x20000)
+2026-09-22 20:55:44,794 | INFO     | core.slicer | slice_page:149 |   Found 19 gutter band(s)
+2026-09-22 20:55:44,816 | INFO     | core.slicer | slice_page:185 |   Panel 235: rows 0-1649 (1600x1649) -> panel_0235.png
+2026-09-22 20:55:44,841 | INFO     | core.slicer | slice_page:185 |   Panel 236: rows 1649-3406 (1600x1757) -> panel_0236.png
+2026-09-22 20:55:44,851 | INFO     | core.slicer | slice_page:185 |   Panel 237: rows 3406-3552 (1600x146) -> panel_0237.png
+2026-09-22 20:55:44,857 | INFO     | core.slicer | slice_page:185 |   Panel 238: rows 3552-3710 (1600x158) -> panel_0238.png
+2026-09-22 20:55:44,979 | INFO     | core.slicer | slice_page:185 |   Panel 239: rows 3710-6189 (1600x2479) -> panel_0239.png
+2026-09-22 20:55:45,006 | INFO     | core.slicer | slice_page:185 |   Panel 240: rows 6189-7181 (1600x992) -> panel_0240.png
+2026-09-22 20:55:45,014 | INFO     | core.slicer | slice_page:185 |   Panel 241: rows 7181-7324 (1600x143) -> panel_0241.png
+2026-09-22 20:55:45,015 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 7324-7403 (height=79)
+2026-09-22 20:55:45,023 | INFO     | core.slicer | slice_page:185 |   Panel 242: rows 7403-7628 (1600x225) -> panel_0242.png
+2026-09-22 20:55:45,038 | INFO     | core.slicer | slice_page:185 |   Panel 243: rows 7628-8089 (1600x461) -> panel_0243.png
+2026-09-22 20:55:45,044 | INFO     | core.slicer | slice_page:185 |   Panel 244: rows 8089-8209 (1600x120) -> panel_0244.png
+2026-09-22 20:55:45,052 | INFO     | core.slicer | slice_page:185 |   Panel 245: rows 8209-8346 (1600x137) -> panel_0245.png
+2026-09-22 20:55:45,065 | INFO     | core.slicer | slice_page:185 |   Panel 246: rows 8346-8756 (1600x410) -> panel_0246.png
+2026-09-22 20:55:45,074 | INFO     | core.slicer | slice_page:185 |   Panel 247: rows 8756-9042 (1600x286) -> panel_0247.png
+2026-09-22 20:55:45,277 | INFO     | core.slicer | slice_page:185 |   Panel 248: rows 9042-13722 (1600x4680) -> panel_0248.png
+2026-09-22 20:55:45,422 | INFO     | core.slicer | slice_page:185 |   Panel 249: rows 13722-16952 (1600x3230) -> panel_0249.png
+2026-09-22 20:55:45,429 | INFO     | core.slicer | slice_page:185 |   Panel 250: rows 16952-17260 (1600x308) -> panel_0250.png
+2026-09-22 20:55:45,429 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 17260-17304 (height=44)
+2026-09-22 20:55:45,525 | INFO     | core.slicer | slice_page:185 |   Panel 251: rows 17304-19682 (1600x2378) -> panel_0251.png
+2026-09-22 20:55:45,531 | INFO     | core.slicer | slice_page:185 |   Panel 252: rows 19682-20000 (1600x318) -> panel_0252.png
+2026-09-22 20:55:45,874 | INFO     | core.slicer | slice_page:138 | Processing page: page_0025.png (1600x13774)
+2026-09-22 20:55:46,008 | INFO     | core.slicer | slice_page:149 |   Found 19 gutter band(s)
+2026-09-22 20:55:46,012 | INFO     | core.slicer | slice_page:185 |   Panel 253: rows 0-211 (1600x211) -> panel_0253.png
+2026-09-22 20:55:46,106 | INFO     | core.slicer | slice_page:185 |   Panel 254: rows 211-2580 (1600x2369) -> panel_0254.png
+2026-09-22 20:55:46,180 | INFO     | core.slicer | slice_page:185 |   Panel 255: rows 2580-4720 (1600x2140) -> panel_0255.png
+2026-09-22 20:55:46,560 | INFO     | core.slicer | slice_page:185 |   Panel 256: rows 4720-11008 (1600x6288) -> panel_0256.png
+2026-09-22 20:55:46,570 | INFO     | core.slicer | slice_page:185 |   Panel 257: rows 11008-11163 (1600x155) -> panel_0257.png
+2026-09-22 20:55:46,570 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 11163-11226 (height=63)
+2026-09-22 20:55:46,570 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 11226-11290 (height=64)
+2026-09-22 20:55:46,570 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 11290-11298 (height=8)
+2026-09-22 20:55:46,570 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 11298-11353 (height=55)
+2026-09-22 20:55:46,570 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 11353-11383 (height=30)
+2026-09-22 20:55:46,578 | INFO     | core.slicer | slice_page:185 |   Panel 258: rows 11383-11600 (1600x217) -> panel_0258.png
+2026-09-22 20:55:46,600 | INFO     | core.slicer | slice_page:185 |   Panel 259: rows 11600-12126 (1600x526) -> panel_0259.png
+2026-09-22 20:55:46,626 | INFO     | core.slicer | slice_page:185 |   Panel 260: rows 12126-12361 (1600x235) -> panel_0260.png
+2026-09-22 20:55:46,649 | INFO     | core.slicer | slice_page:185 |   Panel 261: rows 12361-12630 (1600x269) -> panel_0261.png
+2026-09-22 20:55:46,673 | INFO     | core.slicer | slice_page:185 |   Panel 262: rows 12630-12882 (1600x252) -> panel_0262.png
+2026-09-22 20:55:46,696 | INFO     | core.slicer | slice_page:185 |   Panel 263: rows 12882-13166 (1600x284) -> panel_0263.png
+2026-09-22 20:55:46,717 | INFO     | core.slicer | slice_page:185 |   Panel 264: rows 13166-13327 (1600x161) -> panel_0264.png
+2026-09-22 20:55:46,732 | INFO     | core.slicer | slice_page:185 |   Panel 265: rows 13327-13564 (1600x237) -> panel_0265.png
+2026-09-22 20:55:46,742 | INFO     | core.slicer | slice_page:185 |   Panel 266: rows 13564-13764 (1600x200) -> panel_0266.png
+2026-09-22 20:55:46,743 | DEBUG    | core.slicer | slice_page:162 |   Skipping thin strip: rows 13764-13774 (height=10)
+2026-09-22 20:55:47,230 | INFO     | core.slicer | slice_page:138 | Processing page: page_0026.png (5120x2880)
+2026-09-22 20:55:47,306 | INFO     | core.slicer | slice_page:149 |   Found 0 gutter band(s)
+2026-09-22 20:55:48,024 | INFO     | core.slicer | slice_page:185 |   Panel 267: rows 0-2880 (5120x2880) -> panel_0267.png
+2026-09-22 20:55:48,066 | INFO     | core.slicer | slice_chapter:228 | Chapter slicing complete: 267 panels extracted
+2026-09-22 20:55:48,067 | INFO     | core.colab_client | __init__:44 | ColabClient initialized: base=https://pursuit-persistent-tan-inspection.trycloudflare.com, timeout=120s, retries=3
+2026-09-22 20:55:49,143 | INFO     | core.colab_client | health_check:57 | Colab health: status=ready, gpu=Tesla T4, vram_free=5.9GB
+2026-09-22 20:55:49,343 | INFO     | core.colab_client | generate_script:105 | Script request: panel=panel_0001.png, attempt=1/3
+2026-09-22 20:56:43,855 | ERROR    | core.colab_client | generate_script:118 | Script API error (500): {"detail":"CUDA out of memory. Tried to allocate 29.00 GiB. GPU 0 has a total capacity of 14.56 GiB of which 2.09 GiB is free. Including non-PyTorch memory, this process has 12.47 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 894.39 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.py
+2026-09-22 20:56:43,862 | ERROR    | core.colab_client | generate_script:156 | Script request error: 500 Server Error: Internal Server Error for url: https://pursuit-persistent-tan-inspection.trycloudflare.com/api/script
+2026-09-22 20:56:43,863 | INFO     | core.colab_client | generate_script:105 | Script request: panel=panel_0001.png, attempt=2/3
+2026-09-22 20:57:26,911 | ERROR    | core.colab_client | generate_script:118 | Script API error (500): {"detail":"CUDA out of memory. Tried to allocate 29.00 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.70 GiB is free. Including non-PyTorch memory, this process has 12.86 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 1.26 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pyto
+2026-09-22 20:57:26,916 | ERROR    | core.colab_client | generate_script:156 | Script request error: 500 Server Error: Internal Server Error for url: https://pursuit-persistent-tan-inspection.trycloudflare.com/api/script
+2026-09-22 20:57:26,921 | INFO     | core.colab_client | generate_script:105 | Script request: panel=panel_0001.png, attempt=3/3
+2026-09-22 20:58:42,415 | ERROR    | core.colab_client | generate_script:118 | Script API error (500): {"detail":"CUDA out of memory. Tried to allocate 29.00 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.70 GiB is free. Including non-PyTorch memory, this process has 12.86 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 1.26 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pyto
+2026-09-22 20:58:42,420 | ERROR    | core.colab_client | generate_script:156 | Script request error: 500 Server Error: Internal Server Error for url: https://pursuit-persistent-tan-inspection.trycloudflare.com/api/script
+2026-09-22 20:58:42,459 | INFO     | core.colab_client | generate_script:105 | Script request: panel=panel_0002.png, attempt=1/3
+2026-09-22 20:58:51,056 | INFO     | core.colab_client | generate_script:134 | Script success: 153 chars, panel=panel_0002.png
+2026-09-22 20:58:52,003 | INFO     | core.colab_client | generate_voice:198 | Voice request: chars=153, attempt=1/3
+2026-09-22 20:58:58,815 | INFO     | core.colab_client | generate_voice:228 | Voice success: size=404KB, file=audio_0002.mp3
+2026-09-22 20:58:58,818 | INFO     | core.compositor | render_video_chunk:98 | Building composite frame for panel_0002.png
+2026-09-22 20:58:59,133 | INFO     | core.compositor | render_video_chunk:124 | FFmpeg render: chunk_0002.mp4

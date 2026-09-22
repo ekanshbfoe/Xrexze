@@ -8,7 +8,13 @@ https://github.com/ekanshbfoe/Xrexze
 
 import sys
 import shutil
+import os
+import warnings
 from pathlib import Path
+
+# Suppress Hugging Face Hub telemetry and warnings
+os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
+warnings.filterwarnings("ignore", module="huggingface_hub.*")
 
 from dotenv import load_dotenv
 
@@ -42,9 +48,10 @@ def main():
 
     verify_dependencies()
 
-    from PyQt6.QtWidgets import QApplication
+    from PyQt6.QtWidgets import QApplication, QDialog
     from PyQt6.QtGui import QFont
     from gui.main_window import MainWindow
+    from gui.project_launcher import ProjectLauncherWindow
 
     app = QApplication(sys.argv)
     app.setApplicationName("Xrexze - ManhwaExplainerStudio")
@@ -112,7 +119,11 @@ def main():
         }
     """)
 
-    window = MainWindow()
+    launcher = ProjectLauncherWindow()
+    if launcher.exec() != QDialog.DialogCode.Accepted:
+        sys.exit(0)
+
+    window = MainWindow(project_root=launcher.selected_project)
     window.show()
 
     sys.exit(app.exec())

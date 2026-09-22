@@ -53,9 +53,10 @@ from gui.components.qa_deck import QADeck
 class MainWindow(QMainWindow):
     """Primary application window for Xrexze ManhwaExplainerStudio."""
 
-    def __init__(self):
+    def __init__(self, project_root: Path):
         super().__init__()
-        self.setWindowTitle("Xrexze - ManhwaExplainerStudio")
+        self._project_root = project_root
+        self.setWindowTitle(f"Xrexze - {project_root.name}")
         self.setMinimumSize(1280, 720)
 
         central = QWidget()
@@ -70,7 +71,7 @@ class MainWindow(QMainWindow):
 
         # Three-Panel Splitter
         splitter = QSplitter(Qt.Orientation.Horizontal)
-        self.ingestion_panel = IngestionPanel()
+        self.ingestion_panel = IngestionPanel(project_root=self._project_root)
         self.state_table = StateTable()
         self.qa_deck = QADeck()
 
@@ -96,7 +97,7 @@ class MainWindow(QMainWindow):
         if self.pipeline_worker and self.pipeline_worker.isRunning():
             return
 
-        self.pipeline_worker = PipelineWorker(page_paths, mode)
+        self.pipeline_worker = PipelineWorker(page_paths, mode, project_root=self._project_root)
         self.pipeline_worker.panel_state_changed.connect(
             self.state_table.update_panel_state
         )
@@ -116,8 +117,11 @@ class MainWindow(QMainWindow):
         self.pipeline_worker.pipeline_complete.connect(
             self._on_pipeline_complete
         )
-        self.qa_deck.panel_approved.connect(
-            self.pipeline_worker.approve_panel
+        self.qa_deck.script_approved.connect(
+            self.pipeline_worker.approve_script
+        )
+        self.qa_deck.render_approved.connect(
+            self.pipeline_worker.approve_render
         )
         self.pipeline_worker.start()
 
@@ -132,4 +136,13 @@ class MainWindow(QMainWindow):
         if self.pipeline_worker and self.pipeline_worker.isRunning():
             self.pipeline_worker.stop()
             self.pipeline_worker.wait(5000)
+            
+        # Clean up the bridge worker if it's running
+        if hasattr(self.ingestion_panel, "bridge_worker") and self.ingestion_panel.bridge_worker.isRunning():
+            self.ingestion_panel.bridge_worker.stop()
+            self.ingestion_panel.bridge_worker.wait(10000)
+            
+        if hasattr(self.ingestion_panel, "stop_health_polling"):
+            self.ingestion_panel.stop_health_polling()
+            
         event.accept()
